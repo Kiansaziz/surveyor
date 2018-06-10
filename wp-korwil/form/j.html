@@ -1,0 +1,1261 @@
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+
+        <div class="box-body">
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"><label>1001.</label></div>
+              <div class="col-md-11 col-soal"><label> Selama 12 bulan terakhir, seberapa sering Saudara/i mendengar/menyaksikan/mengikuti Program Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme sebagai berikut: <b class="text-danger">*</b> </label> <br><br></div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  a. Sosialisasi Pemerintah dan Instansi Terkait (seperti: Bank Indonesia, Otoritas Jasa Keuangan, Kementerian Keuangan, PPATK) tentang Ketentuan Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001a" required ng-model="kuesioner.final.j.p1001a" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001a" required ng-model="kuesioner.final.j.p1001a" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001a" required ng-model="kuesioner.final.j.p1001a" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001a" required ng-model="kuesioner.final.j.p1001a" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001a')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 a</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001a}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001a}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001a" ng-model="kuesioner.final.j.p1001a">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001a', kuesioner.final.j.p1001a, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  b. Sosialisasi Pemerintah tentang Program Deradikalisasi
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001b" required ng-model="kuesioner.final.j.p1001b" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001b" required ng-model="kuesioner.final.j.p1001b" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001b" required ng-model="kuesioner.final.j.p1001b" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001b" required ng-model="kuesioner.final.j.p1001b" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001b')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 b</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001b}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001b}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001b" ng-model="kuesioner.final.j.p1001b">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001b', kuesioner.final.j.p1001b, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  c. Informasi Layanan Masyarakat tentang Pencucian Uang dan Pendanaan Terorisme
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001c" required ng-model="kuesioner.final.j.p1001c" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001c" required ng-model="kuesioner.final.j.p1001c" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001c" required ng-model="kuesioner.final.j.p1001c" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001c" required ng-model="kuesioner.final.j.p1001c" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001c')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 c</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001c}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001c}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001c" ng-model="kuesioner.final.j.p1001c">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001c', kuesioner.final.j.p1001c, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  d. Edukasi oleh Lembaga Pendidikan terkait Ketentuan Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme kepada Masyarakat
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001d" required ng-model="kuesioner.final.j.p1001d" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001d" required ng-model="kuesioner.final.j.p1001d" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001d" required ng-model="kuesioner.final.j.p1001d" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001d" required ng-model="kuesioner.final.j.p1001d" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001d')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 d</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001d}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001d}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001d" ng-model="kuesioner.final.j.p1001d">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001d', kuesioner.final.j.p1001d, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  e. Layanan Pengaduan Masyarakat atas indikasi Pencucian Uang dan Pendanaan Terorisme
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001e" required ng-model="kuesioner.final.j.p1001e" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001e" required ng-model="kuesioner.final.j.p1001e" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001e" required ng-model="kuesioner.final.j.p1001e" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001e" required ng-model="kuesioner.final.j.p1001e" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001e')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 e</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001e}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001e}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001e" ng-model="kuesioner.final.j.p1001e">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001e', kuesioner.final.j.p1001e, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  f. Berita Penanganan Kasus-Kasus Pencucian Uang di Indonesia
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001f" required ng-model="kuesioner.final.j.p1001f" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001f" required ng-model="kuesioner.final.j.p1001f" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001f" required ng-model="kuesioner.final.j.p1001f" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001f" required ng-model="kuesioner.final.j.p1001f" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001f')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 f</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001f}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001f}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001f" ng-model="kuesioner.final.j.p1001f">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001f', kuesioner.final.j.p1001f, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  g. Berita Penanganan Kasus-Kasus Pendanaan Terorisme di Indonesia
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001g" required ng-model="kuesioner.final.j.p1001g" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001g" required ng-model="kuesioner.final.j.p1001g" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001g" required ng-model="kuesioner.final.j.p1001g" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1001g" required ng-model="kuesioner.final.j.p1001g" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1001g')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1001 g</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1001g}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1001g}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1001g" ng-model="kuesioner.final.j.p1001g">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1001g', kuesioner.final.j.p1001g, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"><label>1002.</label></div>
+              <div class="col-md-11 col-soal"><label> Selama 12 bulan terakhir, seberapa sering Saudara/i mendapatkan pengetahuan tentang Program Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme melalui sumber berita berikut: <b class="text-danger">*</b> </label> <br><br></div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  a. Sosialisasi langsung oleh Pemerintah/Instansi Terkait
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002a" required ng-model="kuesioner.final.j.p1002a" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002a" required ng-model="kuesioner.final.j.p1002a" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002a" required ng-model="kuesioner.final.j.p1002a" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002a" required ng-model="kuesioner.final.j.p1002a" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1002a')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1002 a</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1002a}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1002a}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1002a" ng-model="kuesioner.final.j.p1002a">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1002a', kuesioner.final.j.p1002a, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  b. Publikasi Pemerintah/Instansi Terkait melalui website
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002b" required ng-model="kuesioner.final.j.p1002b" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002b" required ng-model="kuesioner.final.j.p1002b" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002b" required ng-model="kuesioner.final.j.p1002b" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002b" required ng-model="kuesioner.final.j.p1002b" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1002b')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1002 b</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1002b}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1002b}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1002b" ng-model="kuesioner.final.j.p1002b">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1002b', kuesioner.final.j.p1002b, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  c. Sosialisasi oleh Lembaga Keuangan
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002c" required ng-model="kuesioner.final.j.p1002c" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002c" required ng-model="kuesioner.final.j.p1002c" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002c" required ng-model="kuesioner.final.j.p1002c" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002c" required ng-model="kuesioner.final.j.p1002c" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1002c')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1002 c</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1002c}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1002c}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1002c" ng-model="kuesioner.final.j.p1002c">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1002c', kuesioner.final.j.p1002c, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  d. Sosialisasi oleh Lembaga Swadaya Masyarakat
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002d" required ng-model="kuesioner.final.j.p1002d" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002d" required ng-model="kuesioner.final.j.p1002d" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002d" required ng-model="kuesioner.final.j.p1002d" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002d" required ng-model="kuesioner.final.j.p1002d" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1002d')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1002 d</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1002d}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1002d}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1002d" ng-model="kuesioner.final.j.p1002d">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1002d', kuesioner.final.j.p1002d, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  e. Berita/informasi melalui media massa
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002e" required ng-model="kuesioner.final.j.p1002e" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002e" required ng-model="kuesioner.final.j.p1002e" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002e" required ng-model="kuesioner.final.j.p1002e" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1002e" required ng-model="kuesioner.final.j.p1002e" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1002e')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1002 e</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1002e}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1002e}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1002e" ng-model="kuesioner.final.j.p1002e">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1002e', kuesioner.final.j.p1002e, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"><label>1003.</label></div>
+              <div class="col-md-11 col-soal">
+                <label>Terkait dengan jawaban atas pertanyaan 1002, sumber informasi manakah yang menurut Saudara/i paling TEPAT/EFEKTIF (mudah diterima) dalam menyosialisasikan Program Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme kepada Masyarakat: <b class="text-danger">*</b> </label>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tr>
+                      <td width="50%">
+                        <div class="radio">
+                          <label><input type="radio" name="p1003" required ng-model="kuesioner.final.j.p1003" value="Sosialisasi Langsung oleh Pemerintah/Instansi Terkait"> Sosialisasi Langsung oleh Pemerintah/Instansi Terkait </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1003" required ng-model="kuesioner.final.j.p1003" value="Edukasi oleh Lembaga Pendidikan"> Edukasi oleh Lembaga Pendidikan</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1003" required ng-model="kuesioner.final.j.p1003" value="Publikasi Pemerintah/Instansi Terkait melalui website"> Publikasi Pemerintah/Instansi Terkait melalui website</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1003" required ng-model="kuesioner.final.j.p1003" value="Sosialisasi oleh Lembaga Swadaya Masyarakat"> Sosialisasi oleh Lembaga Swadaya Masyarakat </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1003" required ng-model="kuesioner.final.j.p1003" value="Sosialisasi oleh Industri Keuangan"> Sosialisasi oleh Industri Keuangan </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1003" required ng-model="kuesioner.final.j.p1003" value="Berita/informasi melalui media massa"> Berita/informasi melalui media massa </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1003')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1003</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1003}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1003}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1003" ng-model="kuesioner.final.j.p1003">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1003', kuesioner.final.j.p1003, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"><label>1004.</label></div>
+              <div class="col-md-11 col-soal"><label> Selama 12 bulan terakhir, seberapa sering Saudara/i mendapatkan pengetahuan tentang Program Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme melalui beberapa media berikut: <b class="text-danger">*</b> </label> <br><br></div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  a. Televisi
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004a" required ng-model="kuesioner.final.j.p1004a" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004a" required ng-model="kuesioner.final.j.p1004a" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004a" required ng-model="kuesioner.final.j.p1004a" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004a" required ng-model="kuesioner.final.j.p1004a" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004a')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 a</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004a}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004a}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004a" ng-model="kuesioner.final.j.p1004a">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004a', kuesioner.final.j.p1004a, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  b. Radio
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004b" required ng-model="kuesioner.final.j.p1004b" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004b" required ng-model="kuesioner.final.j.p1004b" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004b" required ng-model="kuesioner.final.j.p1004b" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004b" required ng-model="kuesioner.final.j.p1004b" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004b')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 b</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004b}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004b}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004b" ng-model="kuesioner.final.j.p1004b">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004b', kuesioner.final.j.p1004b, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  c. Koran/Majalah
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004c" required ng-model="kuesioner.final.j.p1004c" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004c" required ng-model="kuesioner.final.j.p1004c" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004c" required ng-model="kuesioner.final.j.p1004c" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004c" required ng-model="kuesioner.final.j.p1004c" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004c')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 c</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004c}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004c}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004c" ng-model="kuesioner.final.j.p1004c">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004c', kuesioner.final.j.p1004c, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  d. Internet/Media Sosial (WhatsApp, Line, Instagram, Twitter, dll)
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004d" required ng-model="kuesioner.final.j.p1004d" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004d" required ng-model="kuesioner.final.j.p1004d" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004d" required ng-model="kuesioner.final.j.p1004d" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004d" required ng-model="kuesioner.final.j.p1004d" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004d')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 d</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004d}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004d}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004d" ng-model="kuesioner.final.j.p1004d">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004d', kuesioner.final.j.p1004d, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  e. Alat Peraga (pameran, spanduk, pamflet, brosur, stiker, dsb)
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004e" required ng-model="kuesioner.final.j.p1004e" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004e" required ng-model="kuesioner.final.j.p1004e" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004e" required ng-model="kuesioner.final.j.p1004e" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004e" required ng-model="kuesioner.final.j.p1004e" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004e')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 e</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004e}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004e}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004e" ng-model="kuesioner.final.j.p1004e">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004e', kuesioner.final.j.p1004e, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  f. Penyampaian secara langsung (pidato, khutbah, nasehat, dsb)
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004f" required ng-model="kuesioner.final.j.p1004f" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004f" required ng-model="kuesioner.final.j.p1004f" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004f" required ng-model="kuesioner.final.j.p1004f" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004f" required ng-model="kuesioner.final.j.p1004f" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004f')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 f</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004f}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004f}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004f" ng-model="kuesioner.final.j.p1004f">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004f', kuesioner.final.j.p1004f, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  g. Penyampaian secara tidak langsung melalui kesenian dan sebagainya
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004g" required ng-model="kuesioner.final.j.p1004g" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004g" required ng-model="kuesioner.final.j.p1004g" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004g" required ng-model="kuesioner.final.j.p1004g" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004g" required ng-model="kuesioner.final.j.p1004g" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004g')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 g</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004g}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004g}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004g" ng-model="kuesioner.final.j.p1004g">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004g', kuesioner.final.j.p1004g, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"></div>
+              <div class="col-md-11 col-soal">
+                <div class="col-md-7">
+                  h. Kurikulum pendidikan formal
+                </div>
+                <div class="col-md-5">
+                  <table class="table table-bordered" style="margin:0px;">
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004h" required ng-model="kuesioner.final.j.p1004h" value="Tidak Pernah">Tidak Pernah</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004h" required ng-model="kuesioner.final.j.p1004h" value="Jarang">Jarang</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004h" required ng-model="kuesioner.final.j.p1004h" value="Sering">Sering</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" class="" name="p1004h" required ng-model="kuesioner.final.j.p1004h" value="Selalu/Sangat Sering">Selalu/ Sangat Sering</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1004h')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1004 h</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1004h}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1004h}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1004h" ng-model="kuesioner.final.j.p1004h">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1004h', kuesioner.final.j.p1004h, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+              <div class="col-md-1 col-nomor"><label>1005.</label></div>
+              <div class="col-md-11 col-soal">
+                <label>Terkait dengan jawaban atas pertanyaan 1004, media apakah yang menurut Saudara/i paling TEPAT/EFEKTIF (mudah diterima) oleh masyarakat untuk memperoleh informasi tentang Program Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme: <b class="text-danger">*</b> </label>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tr>
+                      <td width="50%">
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Televisi"> Televisi </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Alat Peraga (pameran, spanduk, pamflet, brosur, stiker, dsb)"> Alat Peraga (pameran, spanduk, pamflet, brosur, stiker, dsb)</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Radio"> Radio</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Penyampaian secara langsung (pidato, khutbah, nasehat, dsb)"> Penyampaian secara langsung (pidato, khutbah, nasehat, dsb) </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Koran/Majalah"> Koran/Majalah </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Penyampaian secara tidak langsung melalui kesenian, dsb"> Penyampaian secara tidak langsung melalui kesenian, dsb </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Internet/Media Sosial"> Internet/Media Sosial </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005" required ng-model="kuesioner.final.j.p1005" value="Kurikulum pendidikan formal"> Kurikulum pendidikan formal </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p1005')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>1005</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.j.p1005}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.j.p1005}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="p1005" ng-model="kuesioner.final.j.p1005">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('j', kuesioner.final.j.nomor_kuesioner, 'p1005', kuesioner.final.j.p1005, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+        </div><!-- box-body -->
+      </div><!-- /.nav-tabs-custom -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section>
+<!-- /.content -->

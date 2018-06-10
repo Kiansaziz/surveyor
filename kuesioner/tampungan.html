@@ -1,0 +1,32 @@
+<tr>
+  <td></td>
+  <td>
+    <div class="form-inline">
+      Tabel Hasil :
+      <select class="form-control" name="enum" ng-model="eksportGabungan">
+        <option value="">-Pilih</option>
+        <option value="tbl_jwb_gb_a">Tabel A</option>
+        <option value="tbl_jwb_gb_b">Tabel B</option>
+        <option value="tbl_jwb_gb_c">Tabel C</option>
+        <option value="tbl_jwb_gb_d">Tabel D</option>
+        <option value="tbl_jwb_gb_e">Tabel E</option>
+        <option value="tbl_jwb_gb_f">Tabel F</option>
+        <option value="tbl_jwb_gb_g">Tabel G</option>
+        <option value="tbl_jwb_gb_h">Tabel H</option>
+        <option value="tbl_jwb_gb_i">Tabel I</option>
+        <option value="tbl_jwb_gb_j">Tabel J</option>
+        <option value="tbl_jwb_gb_k">Tabel K</option>
+      </select>
+    </div>
+  </td>
+  <td>
+    <button
+          ng-disabled = "!eksportGabungan"
+          class="btn btn-sm bg-orange"
+          type="button"
+          ng-csv="eksportTable(eksportGabungan)"
+          filename="Table3.csv">
+          Export .csv
+    </button>
+  </td>
+</tr>

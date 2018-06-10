@@ -1,0 +1,254 @@
+<!-- Content Header (Page header) -->
+<section class="content-header text-center">
+  <h1>
+    {{$route.current.title}}
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#/"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+    <li class="active">Group A</li>
+  </ol>
+</section>
+
+<div ng-if="kuesioner.alert.a">
+  <br>
+  <div class="alert alert-danger"><span class="fa fa-warning"></span> PERHATIAN !! Sudah Ada Data Kuesioner Untuk Nomor Kuesioner {{kuesioner.nomor_kuesioner}}, Silakan Update Jawaban Pada Form Berikut.</div>
+</div>
+
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+
+        <span class="label label-info pull-right">{{kuesioner.aksi.a}}</span>
+
+        <div class="box-header with-border">
+          <h3 class="box-title">A.1 KETERANGAN RUMAHTANGGA RESPONDEN</h3>
+        </div>
+
+        <div class="box-body">
+          <form name="form" ng-submit="submit(kuesioner.a, kuesioner.tbl_a, kuesioner.aksi.a, 'a')">
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group">
+                  <label> 101. Nama Kepala Rumahtangga <b class="text-danger">*</b></label>
+                  <input type="text" name="p101" class="form-control" ng-model="kuesioner.a.p101" placeholder="" required>
+                  <span ng-show="form.p101.$invalid && !form.p101.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label> 102. Alamat Lengkap Rumahtangga <b class="text-danger">*</b></label>
+                  <textarea name="p102" class="form-control" rows="9" ng-model="kuesioner.a.p102" required></textarea>
+                  <span ng-show="form.p102.$invalid && !form.p102.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label> 103. Apakah Suadara/i pernah menjadi Responden Survei yang sama di tahun sebelumnya? <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="radio">
+                        <label><input type="radio" name="p103" required value="Pernah" ng-model="kuesioner.a.p103">Pernah</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p103" required value="Tidak Pernah" ng-model="kuesioner.a.p103">Tidak Pernah</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div>
+                  <span ng-show="form.p103.$invalid && !form.p103.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label>104. Jumlah anggota rumahtangga (ART)</label>
+                </div>
+
+                <div class="form-group">
+                  <b>1</b>. Jumlah ART Laki-Laki
+                  <div class="input-group">
+                    <input type="number" name="p1041" class="form-control" ng-model="kuesioner.a.p1041" min="0" required>
+                    <span class="input-group-addon"> Orang</span>
+                  </div>
+                  <span ng-show="form.p1041.$error.required && !form.p1041.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                  <span ng-show="form.p1041.$error.min"><i class="text-danger">Isi Minimal 0</i></span>
+                </div>
+
+                <div class="form-group">
+                  <b>2</b>. Jumlah ART Perempuan
+                  <div class="input-group">
+                    <input type="number" name="p1042" class="form-control" ng-model="kuesioner.a.p1042" min="0" required>
+                    <span class="input-group-addon"> Orang</span>
+                  </div>
+                  <span ng-show="form.p1042.$error.required && !form.p1042.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                  <span ng-show="form.p1042.$error.min"><i class="text-danger">Isi Minimal 0</i></span>
+                </div>
+
+              </div><!-- md12 -->
+            </div> <!-- row -->
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="box-header with-border">
+                  <h3 class="box-title">A.2 PROFIL RESPONDEN</h3>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group">
+                  <label><br> 105. Hubungan Responden dengan Kepala Rumahtangga  <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Kepala Rumahtangga" ng-model="kuesioner.a.p105">Kepala Rumahtangga</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Istri/Suami" ng-model="kuesioner.a.p105">Istri/Suami</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Anak" ng-model="kuesioner.a.p105">Anak</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Famili Lain (Menantu, Cucu, Orangtua/Mertua)" ng-model="kuesioner.a.p105">Famili Lain (Menantu, Cucu, Orangtua/Mertua)</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Anggota Rumahtangga Lainnya" ng-model="kuesioner.a.p105">Anggota Rumahtangga Lainnya (Sopir, Pembantu, dll)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <span ng-show="form.p105.$invalid && !form.p105.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label> 106. Jenis Kelamin <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="Laki-laki" ng-model="kuesioner.a.p106">Laki-laki</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="Perempuan" ng-model="kuesioner.a.p106">Perempuan</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div>
+                  <span ng-show="form.p106.$invalid && !form.p106.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label> 107. Usia  <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="17-23 tahun" ng-model="kuesioner.a.p107">17-23 Tahun</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="24-30 tahun" ng-model="kuesioner.a.p107">24-30 Tahun</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="31-40 tahun" ng-model="kuesioner.a.p107">31-40 Tahun</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="41-60 tahun" ng-model="kuesioner.a.p107">41-60 Tahun</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="Lebih dari 60 tahun" ng-model="kuesioner.a.p107">Lebih dari 60 tahun</label>
+                      </div>
+                    </div>
+                  </div>
+                  <span ng-show="form.p107.$invalid && !form.p107.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label><br> 108. Pendidikan tertinggi yang ditamatkan  <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="Tidak tamat SD/sederajat" ng-model="kuesioner.a.p108">Tidak tamat SD/sederajat</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="SD/sederajat" ng-model="kuesioner.a.p108">SD/sederajat</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="SMP/sederajat" ng-model="kuesioner.a.p108">SMP/sederajat</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="SMA/sederajat" ng-model="kuesioner.a.p108">SMA/sederajat</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="DI/DII/DIII" ng-model="kuesioner.a.p108">DI/DII/DIII</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="DIV/S1" ng-model="kuesioner.a.p108">DIV/S1</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="S2" ng-model="kuesioner.a.p108">S2</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="S3" ng-model="kuesioner.a.p108">S3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <span ng-show="form.p108.$invalid && !form.p108.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label> 109. Status Perkawinan <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p109" required value="Belum Kawin" ng-model="kuesioner.a.p109">Belum Kawin</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p109" required value="Cerai Hidup" ng-model="kuesioner.a.p109">Cerai Hidup</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p109" required value="Kawin" ng-model="kuesioner.a.p109">Kawin</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p109" required value="Cerai Mati" ng-model="kuesioner.a.p109">Cerai Mati</label>
+                      </div>
+                    </div>
+                  </div>
+                  <span ng-show="form.p109.$invalid && !form.p109.$pristine"><i class="text-danger">Harus Diisi</i></span>
+                </div>
+
+              </div><!-- md6 -->
+            </div> <!-- row -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                    <img ng-show="loadForm" src="../assets/images/line-load.gif" alt="">
+                </div>
+              </div>
+            </div>
+
+
+          </form>
+        </div><!-- box-body -->
+        <div class="box-footer">
+          FORM GROUP A
+        </div><!-- box-footer -->
+      </div><!-- /.nav-tabs-custom -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section>
+<!-- /.content -->

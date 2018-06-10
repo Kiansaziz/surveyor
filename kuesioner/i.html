@@ -1,0 +1,2748 @@
+<section class="content-header text-center">
+  <h1>
+    I. KEEFEKTIFAN KINERJA INSTANSI PEMERINTAH TERKAIT PROGRAM ANTI PENCUCIAN UANG DAN PENCEGAHAN PENDANAAN TERORISME
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#/"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+    <li class="active">Group I</li>
+  </ol>
+</section>
+
+<div ng-if="kuesioner.alert.i">
+  <br>
+  <div class="alert alert-danger"><span class="fa fa-warning"></span> PERHATIAN !! Sudah Ada Data Kuesioner Untuk Nomor Kuesioner {{kuesioner.nomor_kuesioner}}, Silakan Update Jawaban Pada Form Berikut.</div>
+</div>
+
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+
+        <span class="label label-info pull-right">{{kuesioner.aksi.i}}</span>
+
+        <div class="box-body">
+          <form name="form" ng-submit="submit(kuesioner.i, kuesioner.tbl_i, kuesioner.aksi.i, 'i')">
+
+            <div class="my-responsive-table-wrapper">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th width="2%" class="text-center">NO</th>
+                    <th width="48%" class="text-center">LEMBAGA PEMERINTAH</th>
+                    <th colspan="2" class="text-center">BIDANG</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <div class="form-group">
+                    <div class="col-sm-12 col-md-12">
+                      <button type="button" data-toggle="collapse" data-target="#penjelasan" class="btn btn-sm btn-default pull-right"><span class="fa fa-question"></span></button>
+                      <div id="penjelasan" class="collapse">
+                        <b>Berikut ini beberapa Lembaga Pemerintah yang memiliki kewenangan dalam upaya pencegahan dan pemberantasan TPPU dan TPPT. Menurut Saudara/i, seberapa besar tingkat pemahaman Saudara/i atas peran setiap Lembaga Pemerintah di bawah ini.</b>
+                        <ul>
+                          <li>Jika tingkat pemahaman Responden pada suatu Lembaga Pemerintah bernilai 6-10, maka Responden ditanyakan seberapa besar tingkat keefektifan kinerja Lembaga Pemerintah tersebut.</li>
+                          <li>Jika tingka pemahaman Responden pada suatu Lembaga Pemerintah bernilai 1-5, maka Responden tidak perlu memberikan penilaian atas tingkat keefektifan kinerja Lembaga Pemerintah tersebut.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 901 ********************************************************************************************************************************901  -->
+                  <tr>
+                    <td rowspan="2">901.</td>
+                    <td rowspan="2">Otoritas Jasa Keuangan selaku Lembaga Pengawas dan Pengatur bagi Industri Keuangan Nasional</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901a" class="" required ng-model="kuesioner.i.p901a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p901b" class="" ng-disabled="kuesioner.i.p901a <= 5" ng-required="kuesioner.i.p901a >= 6" ng-model="kuesioner.i.p901b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 902 ********************************************************************************************************************************902  -->
+                  <tr>
+                    <td rowspan="2">902.</td>
+                    <td rowspan="2">Bank Indonesia selaku Lembaga Pengawas dan Pengatur bagi sistem pembayaran nasional</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902a" class="" required ng-model="kuesioner.i.p902a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p902b" class="" ng-disabled="kuesioner.i.p902a <= 5" ng-required="kuesioner.i.p902a >= 6" ng-model="kuesioner.i.p902b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 903 ********************************************************************************************************************************903  -->
+                  <tr>
+                    <td rowspan="2">903.</td>
+                    <td rowspan="2">Badan Pengawas Perdagangan Berjangka Komoditi selaku Lembaga Pengawas dan Pengatur bagi kegiatan perdagangan berjangka komoditi</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903a" class="" required ng-model="kuesioner.i.p903a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p903b" class="" ng-disabled="kuesioner.i.p903a <= 5" ng-required="kuesioner.i.p903a >= 6" ng-model="kuesioner.i.p903b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 904 ********************************************************************************************************************************904  -->
+                  <tr>
+                    <td rowspan="2">904.</td>
+                    <td rowspan="2">Direktorat Jenderal Kekayaan Negara – Kementerian Keuangan selaku Lembaga Pengawas dan Pengatur bagi kegiatan Balai Lelang</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904a" class="" required ng-model="kuesioner.i.p904a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p904b" class="" ng-disabled="kuesioner.i.p904a <= 5" ng-required="kuesioner.i.p904a >= 6" ng-model="kuesioner.i.p904b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 905 ********************************************************************************************************************************905  -->
+                  <tr>
+                    <td rowspan="2">905.</td>
+                    <td rowspan="2">Kementerian Hukum dan HAM (Kemenkumham) dalam menyusun dan menyempurnakan regulasi anti  pencucian uang dan pendanaan terorisme, di antaranya terkait dengan perampasan aset, pengawasan Organisasi Kemasyarakatan), penerima manfaat, dan pembatasan transaksi tunai.</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905a" class="" required ng-model="kuesioner.i.p905a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p905b" class="" ng-disabled="kuesioner.i.p905a <= 5" ng-required="kuesioner.i.p905a >= 6" ng-model="kuesioner.i.p905b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 906 ********************************************************************************************************************************906  -->
+                  <tr>
+                    <td rowspan="2">906.</td>
+                    <td rowspan="2">Kementrian Koperasi dan UKM selaku Lembaga Pengawas dan Pengatur bagi kegiatan Koperasi Simpan Pinjam</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906a" class="" required ng-model="kuesioner.i.p906a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p906b" class="" ng-disabled="kuesioner.i.p906a <= 5" ng-required="kuesioner.i.p906a >= 6" ng-model="kuesioner.i.p906b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 907 ********************************************************************************************************************************907  -->
+                  <tr>
+                    <td rowspan="2">907.</td>
+                    <td rowspan="2">Kementerian Dalam Negeri (Kemendagri) dalam mengimplementasikan Sistem Identitas Tunggal Administrasi Kependudukan sehingga dapat mencegah terjadinya pencucian uang dan pendanaan terorisme melalui penggunaan identitas palsu.</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907a" class="" required ng-model="kuesioner.i.p907a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p907b" class="" ng-disabled="kuesioner.i.p907a <= 5" ng-required="kuesioner.i.p907a >= 6" ng-model="kuesioner.i.p907b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 908 ********************************************************************************************************************************908  -->
+                  <tr>
+                    <td rowspan="2">908.</td>
+                    <td rowspan="2">Badan Pertanahan Nasional (BPN) dalam mengimplementasikan Peraturan Pencatatan di bidang Pertanahan sehingga dapat mencegah terjadinya pencucian uang dan pendanaan terorisme melalui transaksi perpindahan kepemilikan tanah.</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908a" class="" required ng-model="kuesioner.i.p908a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p908b" class="" ng-disabled="kuesioner.i.p908a <= 5" ng-required="kuesioner.i.p908a >= 6" ng-model="kuesioner.i.p908b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 909 ********************************************************************************************************************************909  -->
+                  <tr>
+                    <td rowspan="4">909.</td>
+                    <td rowspan="4">Badan Nasional Penanggulangan Terorisme (BNPT) selaku Lembaga Pemerintah Non-Kementrian melaksanakan tugas pemerintahan dalam penanggulangan terorisme</td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909a" class="" required ng-model="kuesioner.i.p909a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909b" class="" ng-disabled="kuesioner.i.p909a <= 5" ng-required="kuesioner.i.p909a >= 6" ng-model="kuesioner.i.p909b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909c" class="" required ng-model="kuesioner.i.p909c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p909d" class="" ng-disabled="kuesioner.i.p909c <= 5" ng-required="kuesioner.i.p909c >= 6" ng-model="kuesioner.i.p909d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 910 ********************************************************************************************************************************910  -->
+                  <tr>
+                    <td rowspan="4">910.</td>
+                    <td rowspan="4">
+                      Direktorat Jenderal Bea dan Cukai dalam:
+                      <ul>
+                        <li>a.	Mengawasi pembawaan uang lintas batas sehingga dapat mencegah terjadinya pencucian uang dan pendanaan terorisme dari/ke luar negeri <b>(Pencegahan)</b></li>
+                        <li>b.	Penegakan Hukum Pencucian Uang terkait Kepabeanan dan Cukai  <b>(Pemberantasan)</b></li>
+                      </ul>
+                    </td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910a" class="" required ng-model="kuesioner.i.p910a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910b" class="" ng-disabled="kuesioner.i.p910a <= 5" ng-required="kuesioner.i.p910a >= 6" ng-model="kuesioner.i.p910b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910c" class="" required ng-model="kuesioner.i.p910c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p910d" class="" ng-disabled="kuesioner.i.p910c <= 5" ng-required="kuesioner.i.p910c >= 6" ng-model="kuesioner.i.p910d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 911 ********************************************************************************************************************************911  -->
+                  <tr>
+                    <td rowspan="4">911.</td>
+                    <td rowspan="4">
+                      Kementerian Koordinator Bidang Politik, Hukum dan Keamanan (Kemenkopolhukam) sebagai Ketua Koordinator Nasional Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang dan Pendanaan Terorisme (Kornas TPPU/TPPT) dalam  mengkoordinasikan program pencegahan dan pemberantasan pencucian uang dan pendanaan terorisme lintas lembaga secara nasional.
+                    </td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911a" class="" required ng-model="kuesioner.i.p911a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911b" class="" ng-disabled="kuesioner.i.p911a <= 5" ng-required="kuesioner.i.p911a >= 6" ng-model="kuesioner.i.p911b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911c" class="" required ng-model="kuesioner.i.p911c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p911d" class="" ng-model="kuesioner.i.p911d" ng-disabled="kuesioner.i.p911c <= 5" ng-required="kuesioner.i.p911c >= 6" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 912 ********************************************************************************************************************************912  -->
+                  <tr>
+                    <td rowspan="4">912.</td>
+                    <td rowspan="4">
+                      Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK) selaku:
+                      <ul>
+                        <li>a.	Lembaga Pengawas dan Pengatur bagi penyedia <br> barang dan jasa selain balai lelang <b>(Pencegahan)</b></li>
+                        <li>b.	Lembaga Intelijen Keuangan <b>(Pemberantasan)</b></li>
+                      </ul>
+                    </td>
+                    <td colspan="2" class="text-center">PENCEGAHAN</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912a" class="" required ng-model="kuesioner.i.p912a" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912b" class="" ng-disabled="kuesioner.i.p912a <= 5" ng-required="kuesioner.i.p912a >= 6" ng-model="kuesioner.i.p912b" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912c" class="" required ng-model="kuesioner.i.p912c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p912d" class="" ng-disabled="kuesioner.i.p912c <= 5" ng-required="kuesioner.i.p912c >= 6" ng-model="kuesioner.i.p912d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 913 ********************************************************************************************************************************913  -->
+                  <tr>
+                    <td rowspan="2">913.</td>
+                    <td rowspan="2">Komisi Pemberantasan Korupsi (KPK) dalam Penegakan Hukum Pencucian Uang terkait Korupsi </td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913c" class="" required ng-model="kuesioner.i.p913c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p913d" class="" ng-disabled="kuesioner.i.p913c <= 5" ng-required="kuesioner.i.p913c >= 6" ng-model="kuesioner.i.p913d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 914 ********************************************************************************************************************************914  -->
+                  <tr>
+                    <td rowspan="2">914.</td>
+                    <td rowspan="2">Kepolisian dalam Penegakan Hukum Pencucian Uang</td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914c" class="" required ng-model="kuesioner.i.p914c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p914d" class="" ng-disabled="kuesioner.i.p914c <= 5" ng-required="kuesioner.i.p914c >= 6" ng-model="kuesioner.i.p914d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 915 ********************************************************************************************************************************915  -->
+                  <tr>
+                    <td rowspan="2">915.</td>
+                    <td rowspan="2">Kejaksaan dalam Penegakan Hukum Pencucian Uang </td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915c" class="" required ng-model="kuesioner.i.p915c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p915d" class="" ng-disabled="kuesioner.i.p915c <= 5" ng-required="kuesioner.i.p915c >= 6" ng-model="kuesioner.i.p915d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 916 ********************************************************************************************************************************916  -->
+                  <tr>
+                    <td rowspan="2">916.</td>
+                    <td rowspan="2">Badan Narkotika Nasional (BNN) dalam Penegakan Hukum Pencucian Uang terkait Narkotika </td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916c" class="" required ng-model="kuesioner.i.p916c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p916d" class="" ng-disabled="kuesioner.i.p916c <= 5" ng-required="kuesioner.i.p916c >= 6" ng-model="kuesioner.i.p916d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 917 ********************************************************************************************************************************917  -->
+                  <tr>
+                    <td rowspan="2">917.</td>
+                    <td rowspan="2">Direktorat Jenderal Pajak (DJP) dalam Penegakan Hukum Pencucian Uang terkait Perpajakan</td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917c" class="" required ng-model="kuesioner.i.p917c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p917d" class="" ng-disabled="kuesioner.i.p917c <= 5" ng-required="kuesioner.i.p917c >= 6" ng-model="kuesioner.i.p917d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 918 ********************************************************************************************************************************918  -->
+                  <tr>
+                    <td rowspan="2">918.</td>
+                    <td rowspan="2">Lembaga Peradilan  dalam Penegakan Hukum Pencucian Uang</td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918c" class="" required ng-model="kuesioner.i.p918c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p918d" class="" ng-disabled="kuesioner.i.p918c <= 5" ng-required="kuesioner.i.p918c >= 6" ng-model="kuesioner.i.p918d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 919 ********************************************************************************************************************************919  -->
+                  <tr>
+                    <td rowspan="2">919.</td>
+                    <td rowspan="2">Detasemen Khusus 88 Anti Teror (Densus 88 AT) dalam Penegakan Hukum Pendanaan Terorisme</td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919c" class="" required ng-model="kuesioner.i.p919c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p919d" class="" ng-disabled="kuesioner.i.p919c <= 5" ng-required="kuesioner.i.p919c >= 6" ng-model="kuesioner.i.p919d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 920 ********************************************************************************************************************************920  -->
+                  <tr>
+                    <td rowspan="2">920.</td>
+                    <td rowspan="2">Satgas Terorisme Kejaksaan Agung  dalam Penegakan Hukum Pendanaan Terorisme </td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920c" class="" required ng-model="kuesioner.i.p920c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p920d" class="" ng-disabled="kuesioner.i.p920c <= 5" ng-required="kuesioner.i.p920c >= 6" ng-model="kuesioner.i.p920d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 921 ********************************************************************************************************************************921  -->
+                  <tr>
+                    <td rowspan="2">921.</td>
+                    <td rowspan="2">Lembaga Peradilan  dalam Penegakan Hukum Pendanaan Terorisme </td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921c" class="" required ng-model="kuesioner.i.p921c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p921d" class="" ng-disabled="kuesioner.i.p921c <= 5" ng-required="kuesioner.i.p921c >= 6" ng-model="kuesioner.i.p921d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                  <!-- 922 ********************************************************************************************************************************922  -->
+                  <tr>
+                    <td rowspan="2">922.</td>
+                    <td rowspan="2">Kementerian Luar Negeri (Kemenlu) dalam mengkoordinasikan proses penanganan perkara pencucian uang dan pendanaan terorisme yang terjadi diluar yurisdiksi Indonesia dengan Pemerintah luar negeri. </td>
+                    <td colspan="2" class="text-center">PEMBERANTASAN</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="text-center">
+                      Tingkat Pemahaman (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922c" class="" required ng-model="kuesioner.i.p922c" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                    <td class="text-center">
+                      Tingkat Keefektifan Kinerja (1-10)
+                          <table class="table">
+                            <tr>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="1">1</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="6">6</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="2">2</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="7">7</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="3">3</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="8">8</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="4">4</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="9">9</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="5">5</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="p922d" class="" ng-disabled="kuesioner.i.p922c <= 5" ng-required="kuesioner.i.p922c >= 6" ng-model="kuesioner.i.p922d" value="10">10</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-danger">Submit</button>
+                <img ng-show="loadForm" src="../assets/images/line-load.gif" alt="">
+              </div>
+            </div>
+
+          </form>
+        </div><!-- box-body -->
+        <div class="box-footer">
+          FORM GROUP I
+        </div><!-- box-footer -->
+      </div><!-- /.nav-tabs-custom -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section>
+<!-- /.content -->

@@ -1,0 +1,431 @@
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+
+        <div class="box-header with-border">
+          <h3 class="box-title">A.1 KETERANGAN RUMAHTANGGA RESPONDEN</h3>
+        </div>
+
+        <div class="box-body">
+          <form name="form" ng-submit="submit(kuesioner.a, kuesioner.tbl_a, kuesioner.aksi.a, 'a')">
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group">
+                  <label> 101. Nama kepala rumahtangga <b class="text-danger">*</b></label>
+                  <input type="text" name="p101" class="form-control" ng-model="kuesioner.final.a.p101" placeholder="" required>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p101')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>101</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p101}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p101}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p101" ng-model="kuesioner.final.a.p101">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p101', kuesioner.final.a.p101, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label> 102. Alamat lengkap rumahtangga <b class="text-danger">*</b></label>
+                  <textarea name="p102" class="form-control" rows="9" ng-model="kuesioner.final.a.p102" required></textarea>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p102')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>102</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p102}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p102}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p102" ng-model="kuesioner.final.a.p102">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p102', kuesioner.final.a.p102, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label> 103. </label>
+                </div>
+
+                <div class="form-group">
+                  <label>A. Jumlah anggota rumahtangga (ART)</label>
+                </div>
+
+                <div class="form-group">
+                  <b>A1</b>. Jumlah ART Laki-Laki
+                  <div class="input-group">
+                    <input type="number" name="p103a1" class="form-control" ng-model="kuesioner.final.a.p103a1" min="0" required>
+                    <span class="input-group-addon"> Orang</span>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p103a1')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>103 a 1</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p103a1}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p103a1}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p103a1" ng-model="kuesioner.final.a.p103a1">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p103a1', kuesioner.final.a.p103a1, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <b>A2</b>. Jumlah ART Perempuan
+                  <div class="input-group">
+                    <input type="number" name="p103a2" class="form-control" ng-model="kuesioner.final.a.p103a2" min="0" required>
+                    <span class="input-group-addon"> Orang</span>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p103a2')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>103 a 2</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p103a2}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p103a2}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p103a2" ng-model="kuesioner.final.a.p103a2">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p103a2', kuesioner.final.a.p103a2, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>B. Jumlah ART yang bekerja</label>
+                  <div class="input-group">
+                    <input type="number" name="p103b" class="form-control" ng-model="kuesioner.final.a.p103b" min="0" max="{{kuesioner.final.a.p103a1 + kuesioner.final.a.p103a2}}" required>
+                    <span class="input-group-addon"> Orang</span>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p103b')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>103 b</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p103b}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p103b}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p103b" ng-model="kuesioner.final.a.p103b">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p103b', kuesioner.final.a.p103b, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>C. Jumlah ART yang berpendidikan SMA/sederajat keatas</label>
+                  <div class="input-group">
+                    <input type="number" name="p103c" class="form-control" ng-model="kuesioner.final.a.p103c" min="0" max="{{kuesioner.final.a.p103a1 + kuesioner.final.a.p103a2}}" required>
+                    <span class="input-group-addon"> Orang</span>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p103c')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>103 c</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p103c}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p103c}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p103c" ng-model="kuesioner.final.a.p103c">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p103c', kuesioner.final.a.p103c, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+              </div><!-- md12 -->
+            </div> <!-- row -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="box-header with-border">
+                  <h3 class="box-title">A.2 PROFIL RESPONDEN</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group">
+                  <label><br> 104. Hubungan Responden dengan Kepala Rumahtangga  <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Kepala Rumahtangga" ng-model="kuesioner.final.a.p104">Kepala Rumahtangga</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Istri/Suami" ng-model="kuesioner.final.a.p104">Istri/Suami</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Anak" ng-model="kuesioner.final.a.p104">Anak</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Menantu" ng-model="kuesioner.final.a.p104">Menantu</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Cucu" ng-model="kuesioner.final.a.p104">Cucu</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Orang Tua/Mertua" ng-model="kuesioner.final.a.p104">Orang Tua/Mertua</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Famili Lain" ng-model="kuesioner.final.a.p104">Famili Lain</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p104" required value="Anggota Rumahtangga Lainnya" ng-model="kuesioner.final.a.p104">Anggota Rumahtangga Lainnya (contoh:Sopir, Pembantu, dll)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p104')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>104</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p104}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p104}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p104" ng-model="kuesioner.final.a.p104">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p104', kuesioner.final.a.p104, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label> 105. Jenis Kelamin <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Laki-laki" ng-model="kuesioner.final.a.p105">Laki-laki</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p105" required value="Perempuan" ng-model="kuesioner.final.a.p105">Perempuan</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p105')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>105</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p105}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p105}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p105" ng-model="kuesioner.final.a.p105">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p105', kuesioner.final.a.p105, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label> 106. Usia  <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="17-23 tahun" ng-model="kuesioner.final.a.p106">17-23 Tahun</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="24-30 tahun" ng-model="kuesioner.final.a.p106">24-30 Tahun</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="31-40 tahun" ng-model="kuesioner.final.a.p106">31-40 Tahun</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="41-60 tahun" ng-model="kuesioner.final.a.p106">41-60 Tahun</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p106" required value="Lebih dari 60 tahun" ng-model="kuesioner.final.a.p106">Lebih dari 60 tahun</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p106')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>106</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p106}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p106}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p106" ng-model="kuesioner.final.a.p106">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p106', kuesioner.final.a.p106, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label><br> 107. Pendidikan tertinggi yang ditamatkan  <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="Tidak tamat SD/sederajat" ng-model="kuesioner.final.a.p107">Tidak tamat SD/sederajat</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="SD/sederajat" ng-model="kuesioner.final.a.p107">SD/sederajat</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="SMP/sederajat" ng-model="kuesioner.final.a.p107">SMP/sederajat</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="SMA/sederajat" ng-model="kuesioner.final.a.p107">SMA/sederajat</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="DI/DII/DIII" ng-model="kuesioner.final.a.p107">DI/DII/DIII</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="DIV/S1" ng-model="kuesioner.final.a.p107">DIV/S1</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="S2" ng-model="kuesioner.final.a.p107">S2</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p107" required value="S3" ng-model="kuesioner.final.a.p107">S3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p107')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>107</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p107}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p107}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p107" ng-model="kuesioner.final.a.p107">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p107', kuesioner.final.a.p107, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label> 108. Status Perkawinan <b class="text-danger">*</b></label>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="Belum Kawin" ng-model="kuesioner.final.a.p108">Belum Kawin</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="Cerai Hidup" ng-model="kuesioner.final.a.p108">Cerai Hidup</label>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="Kawin" ng-model="kuesioner.final.a.p108">Kawin</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="p108" required value="Cerai Mati" ng-model="kuesioner.final.a.p108">Cerai Mati</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'p108')">
+                    <table class="table table-bordered">
+                      <tr class="bg-yellow">
+                        <td>108</td>
+                        <td>
+                          <span class="badge bg-blue">{{kuesioner.enum.a.p108}}</span> <br>
+                          <span class="badge bg-red">{{kuesioner.data.a.p108}}</span>
+                        </td>
+                        <td>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="p108" ng-model="kuesioner.final.a.p108">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-primary" ng-click="ubahJawaban('a', kuesioner.final.a.nomor_kuesioner, 'p108', kuesioner.final.a.p108, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+              </div><!-- md6 -->
+            </div> <!-- row -->
+
+
+          </form>
+        </div><!-- box-body -->
+      </div><!-- /.nav-tabs-custom -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section>
+<!-- /.content -->

@@ -1,0 +1,150 @@
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+
+        <div class="box-body">
+
+            <div class="col-md-12">
+
+              <div class="form-group">
+                <label> TERKAIT PENCEGAHAN: <b class="text-danger">*</b></label>
+                <textarea name="pencegahan" class="form-control" rows="5" ng-model="kuesioner.final.k.pencegahan" required></textarea>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'pencegahan')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>Pencegahan</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.k.pencegahan}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.k.pencegahan}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="pencegahan" ng-model="kuesioner.final.k.pencegahan">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('k', kuesioner.final.k.nomor_kuesioner, 'pencegahan', kuesioner.final.k.pencegahan, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label> TERKAIT PEMBERANTASAN: <b class="text-danger">*</b></label>
+                <textarea name="pemberantasan" class="form-control" rows="5" ng-model="kuesioner.final.k.pemberantasan" required></textarea>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'pemberantasan')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>Pemberantasan</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.k.pemberantasan}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.k.pemberantasan}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="pemberantasan" ng-model="kuesioner.final.k.pemberantasan">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('k', kuesioner.final.k.nomor_kuesioner, 'pemberantasan', kuesioner.final.k.pemberantasan, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label> Tanggal Wawancara <b class="text-danger">*</b></label>
+                <div class='input-group'>
+                  <input type="text" name="tgl_wawancara" class="form-control" ng-model="kuesioner.final.k.tgl_wawancara" placeholder="yyyy-mm-dd" required data-date-picker>
+                  <span class="input-group-addon">
+              			<i class="fa fa-calendar"></i>
+              		</span>
+                </div>
+              </div>
+              <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'tgl_wawancara')">
+                <table class="table table-bordered">
+                  <tr class="bg-yellow">
+                    <td>Tanggal</td>
+                    <td>
+                      <span class="badge bg-blue">{{kuesioner.enum.k.tgl_wawancara}}</span> <br>
+                      <span class="badge bg-red">{{kuesioner.data.k.tgl_wawancara}}</span>
+                    </td>
+                    <td>
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="tgl_wawancara" ng-model="kuesioner.final.k.tgl_wawancara" data-date-picker>
+                        <span class="input-group-addon">
+                    			<i class="fa fa-calendar"></i>
+                    		</span>
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-primary" ng-click="ubahJawaban('k', kuesioner.final.k.nomor_kuesioner, 'tgl_wawancara', kuesioner.final.k.tgl_wawancara, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Waktu <b class="text-danger">*</b></label>
+                <div class="input-group">
+                  <input type="text" name="mulai" class="form-control time-picker" ng-model="kuesioner.final.k.mulai" required data-time-picker placeholder="Jam Mulai / Format : HH:mm">
+                    <span class="input-group-addon"> <i class="fa fa-exchange"></i> </span>
+                  <input type="text" name="selesai" class="form-control time-picker" ng-model="kuesioner.final.k.selesai" required data-time-picker placeholder="Jam Selesai / Format : HH:mm">
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'mulai')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>Mulai</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.k.mulai}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.k.mulai}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="mulai" ng-model="kuesioner.final.k.mulai">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('k', kuesioner.final.k.nomor_kuesioner, 'mulai', kuesioner.final.k.mulai, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-if="pertanyaan(kuesioner.beda, 'selesai')">
+                  <table class="table table-bordered">
+                    <tr class="bg-yellow">
+                      <td>Selesai</td>
+                      <td>
+                        <span class="badge bg-blue">{{kuesioner.enum.k.selesai}}</span> <br>
+                        <span class="badge bg-red">{{kuesioner.data.k.selesai}}</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="selesai" ng-model="kuesioner.final.k.selesai">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" ng-click="ubahJawaban('k', kuesioner.final.k.nomor_kuesioner, 'selesai', kuesioner.final.k.selesai, kuesioner.beda)"><span class="fa fa-check"></span></button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+        </div><!-- box-body -->
+      </div><!-- /.nav-tabs-custom -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section>
+<!-- /.content -->
