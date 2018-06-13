@@ -48,7 +48,10 @@ if($type == 'submit')
          if ($grup == 'h') { $ket = "Berhasil Memasukan Data, Mengalihkan Ke Halaman I"; }
          if ($grup == 'i') { $ket = "Berhasil Memasukan Data, Mengalihkan Ke Halaman J"; }
          if ($grup == 'j') { $ket = "Berhasil Memasukan Data, Mengalihkan Ke Halaman K"; }
-         if ($grup == 'k') { $ket = "Berhasil Memasukan Data"; }
+         if ($grup == 'k') { $ket = "Berhasil Memasukan Data, Mengalihkan Ke Halaman L"; }
+         if ($grup == 'l') { $ket = "Berhasil Memasukan Data, Mengalihkan Ke Halaman M"; }
+         if ($grup == 'm') { $ket = "Berhasil Memasukan Data, Mengalihkan Ke Halaman N"; }
+         if ($grup == 'n') { $ket = "Berhasil Memasukan Data"; }
 
           //  QUERY INSERT ------------------------------------------------------------------------------------------------------------------------------------------------
           foreach ($jawaban as $key => $value) {
@@ -69,9 +72,9 @@ if($type == 'submit')
             $query .= "INSERT INTO `tbl_jwb_ed_b` SET $col; ";
             $query .= "INSERT INTO `tbl_jwb_gb_b` SET $col; ";
           }
-          if ($level == '7' && $grup == 'k') {
-            $query .= "INSERT INTO `tbl_jwb_ed_k` SET $col; ";
-            $query .= "INSERT INTO `tbl_jwb_gb_k` SET $col; ";
+          if ($level == '7' && $grup == 'n') {
+            $query .= "INSERT INTO `tbl_jwb_ed_n` SET $col; ";
+            $query .= "INSERT INTO `tbl_jwb_gb_n` SET $col; ";
             $query .= "UPDATE tbl_kuesioner SET $kolom_valid = '0' WHERE nomor_kuesioner = '$nomor_kuesioner'; ";
           }
 
@@ -97,10 +100,26 @@ if($type == 'submit')
           if ($level == '8' && $grup == 'i') {
             $query .= "INSERT INTO `tbl_jwb_gb_i` SET $col; ";
           }
+          // if ($level == '8' && $grup == 'j') {
+          //   $query .= "INSERT INTO `tbl_jwb_gb_j` SET $col; ";
+          //   $query .= "UPDATE tbl_kuesioner SET $kolom_valid = '0' WHERE nomor_kuesioner = '$nomor_kuesioner'; ";
+          // }
           if ($level == '8' && $grup == 'j') {
             $query .= "INSERT INTO `tbl_jwb_gb_j` SET $col; ";
+          }
+           if ($level == '8' && $grup == 'k') {
+            $query .= "INSERT INTO `tbl_jwb_gb_k` SET $col; ";
+          }
+          if ($level == '8' && $grup == 'l') {
+            $query .= "INSERT INTO `tbl_jwb_gb_l` SET $col; ";
+          }
+
+           if ($level == '8' && $grup == 'm') {
+            $query .= "INSERT INTO `tbl_jwb_gb_m` SET $col; ";
             $query .= "UPDATE tbl_kuesioner SET $kolom_valid = '0' WHERE nomor_kuesioner = '$nomor_kuesioner'; ";
           }
+
+          
 
           $run    = $conn->multi_query($query)or die(mysql_error());
           if (!$run) {
@@ -142,7 +161,7 @@ if($type == 'submit')
 
 
             // Proses valid gabungan, jika di table beda kosong, maka diubah menjadi 0 -------------------------------------------------------------------------------
-            if ($level == '8' && ($grup == 'j' || $grup == 'k')) {
+            if ($level == '8' && ($grup == 'm' || $grup == 'n')) {
               $query_cek_gabungan   = "SELECT * FROM tbl_jwb_beda WHERE nomor_kuesioner = '$nomor_kuesioner'";
               $proses_cek_gabungan  = $conn->query($query_cek_gabungan);
               if ($proses_cek_gabungan->num_rows == NULL) {
@@ -185,9 +204,9 @@ if($type == 'submit')
             $query .= "UPDATE `tbl_jwb_ed_b` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
             $query .= "UPDATE `tbl_jwb_gb_b` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
           }
-          if ($level == '7' && $grup == 'k') {
-            $query .= "UPDATE `tbl_jwb_ed_k` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
-            $query .= "UPDATE `tbl_jwb_gb_k` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
+          if ($level == '7' && $grup == 'n') {
+            $query .= "UPDATE `tbl_jwb_ed_n` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
+            $query .= "UPDATE `tbl_jwb_gb_n` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
             $query .= "UPDATE tbl_kuesioner SET $kolom_valid = '0' WHERE nomor_kuesioner = '$nomor_kuesioner'; ";
           }
 
@@ -219,12 +238,22 @@ if($type == 'submit')
           if ($level == '8' && $grup == 'i') {
             $query .= "UPDATE `tbl_jwb_gb_i` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
           }
-          if ($level == '8' && $grup == 'j') {
-            $query .= "UPDATE `tbl_jwb_gb_j` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
-            $query .= "UPDATE tbl_kuesioner SET $kolom_valid = '0' WHERE nomor_kuesioner = '$nomor_kuesioner'; ";
+         if ($level == '8' && $grup == 'j') {
+            $query .= "UPDATE `tbl_jwb_gb_i` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
           }
           if ($level == '8' && $grup == 'k') {
             $query .= "UPDATE `tbl_jwb_gb_k` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
+          }
+           if ($level == '8' && $grup == 'l') {
+            $query .= "UPDATE `tbl_jwb_gb_k` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
+          }
+           if ($level == '8' && $grup == 'm') {
+            $query .= "UPDATE `tbl_jwb_gb_m` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
+            $query .= "UPDATE tbl_kuesioner SET $kolom_valid = '0' WHERE nomor_kuesioner = '$nomor_kuesioner'; ";
+          }
+
+           if ($level == '8' && $grup == 'n') {
+            $query .= "UPDATE `tbl_jwb_gb_n` SET $col WHERE `nomor_kuesioner` = '$nomor_kuesioner'; ";
           }
 
 
@@ -271,7 +300,7 @@ if($type == 'submit')
 
 
             // Proses valid gabungan, jika di table beda kosong, maka diubah menjadi 0 -------------------------------------------------------------------------------
-            if ($level == '8' && ($grup == 'j' || $grup == 'k')) {
+            if ($level == '8' && ($grup == 'm' || $grup == 'n')) {
               $query_cek_gabungan   = "SELECT * FROM tbl_jwb_beda WHERE nomor_kuesioner = '$nomor_kuesioner'";
               $proses_cek_gabungan  = $conn->query($query_cek_gabungan);
               if ($proses_cek_gabungan->num_rows == NULL) {
