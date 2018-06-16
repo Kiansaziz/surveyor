@@ -576,7 +576,7 @@
               <div class="col-md-1 col-nomor"><label>603.</label></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  <label>a. Apakah Saudara/i setuju apabila seseorang yang melakukan kegiatan-kegiatan tersebut dikenai pidana Pendanaan Terorisme? <b class="text-danger">*</b> </label>
+                  <label>a. Apakah Saudara/i setuju apabila seseorang yang melakukan kegiatan-kegiatan tersebut dikenai Pidana Pendanaan Terorisme? <b class="text-danger">*</b> </label>
                 </div>
                 <div class="col-md-2">
                   <div class="radio">
@@ -595,7 +595,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-12">
-                  <label>b. Jika tidak setuju, apa alasan Saudara/i? <b class="text-danger">*</b> </label>
+                  <label>b. Jika "Tidak Setuju", apa alasan Saudara/i? <b class="text-danger">*</b> </label>
                 </div>
               </div>
             </div>
@@ -638,7 +638,7 @@
                 3) Lainnya
               </div>
               <div class="col-md-4">
-                <input type="text" name="p603b3" class="form-control" ng-model="kuesioner.f.p603b3" placeholder="" ng-disabled="kuesioner.f.p603a == 'Ya' || kuesioner.alert.f">
+                <input type="text" name="p603b3" class="form-control" ng-model="kuesioner.f.p603b3" placeholder="Sebutkan......." ng-disabled="kuesioner.f.p603a == 'Ya' || kuesioner.alert.f">
                 <span ng-show="form.p603b3.$invalid && !form.p603b3.$pristine"><i class="text-danger">Harus Diisi</i></span>
               </div>
             </div>
@@ -665,12 +665,12 @@
                 </div>
                 <div class="col-md-2">
                   <div class="radio">
-                    <label><input type="radio" name="parameter" class="" ng-disabled="kuesioner.alert.f" ng-required="kuesioner.f.p603a == 'Tidak'" ng-model="kuesioner.f.parameter" value="1">Ya</label>
+                    <label><input type="radio" name="p603c" class="" ng-disabled="kuesioner.alert.f" ng-required="kuesioner.f.p603a == 'Tidak'" ng-model="kuesioner.f.p603c" value="Ya">Ya</label>
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="radio">
-                    <label><input type="radio" name="parameter" class="" ng-disabled="kuesioner.alert.f" ng-required="kuesioner.f.p603a == 'Tidak'" ng-model="kuesioner.f.parameter" value="0">Tidak</label>
+                    <label><input type="radio" name="p603c" class="" ng-disabled="kuesioner.alert.f" ng-required="kuesioner.f.p603a == 'Tidak'" ng-model="kuesioner.f.p603c" value="Tidak">Tidak</label>
                   </div>
                 </div>
               </div>

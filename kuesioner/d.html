@@ -19,14 +19,14 @@
   <div class="alert alert-danger"><span class="fa fa-warning"></span> PERHATIAN !! Sudah Ada Data Kuesioner Untuk Nomor Kuesioner {{kuesioner.nomor_kuesioner}}, Silakan Update Jawaban Pada Form Berikut.</div>
 </div>
 
-<div ng-if="kuesioner.c.p303a == 'Tidak' && kuesioner.c.parameter == '0'">
+<div ng-if="kuesioner.c.p303a == 'Tidak' && kuesioner.c.p303c == 'Tidak'">
   <br>
   <div class="alert alert-danger"><span class="fa fa-warning"></span> PERHATIAN !! Tidak Tersedia Form D Karena Jawaban 303 = 'Tidak', Dan Responden Tidak Merubah Jawaban Menjadi 'Ya'.</div>
 </div>
 
 
 <!-- Main content -->
-<section class="content" ng-if="kuesioner.c.p303a == 'Ya' || kuesioner.c.parameter == '1'">
+<section class="content" ng-if="kuesioner.c.p303a == 'Ya' || kuesioner.c.p303c == 'Ya'">
   <div class="row">
     <div class="col-md-12">
       <div class="box box-primary">
@@ -333,7 +333,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  b. Pengusaha/Wiraswasta (UMKM, Pengusaha Konveksi, Pengusaha Peternakan, Pemilik Usaha Kerajinan, dll
+                  b. Pengusaha/Wiraswasta (UMKM, Pengusaha Konveksi, Pengusaha Peternakan, Pemilik Usaha Kerajinan)
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -938,7 +938,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  m. Petani, Nelayan, Pengrajin, Buruh Lepas, Pedagang, dll
+                  m. Petani, Nelayan, Pengrajin, Buruh Lepas, Pedagang
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -1240,7 +1240,7 @@
             <hr>
 
             <div class="form-group">
-              <div class="col-md-1 col-nomor"><label>403.</label></div>
+              <div class="col-md-1 col-nomor"><label>405.</label></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
                   <label> Menurut Saudara/I seberapa besar kemungkinannya dana/harta pencucian uang bersumber dari hasil kejahatan berikut ini: <b class="text-danger">*</b> </label> <br>
@@ -1365,7 +1365,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  c. Hasil dari kejahatan Narkotika dan obat-obatan terlarang, misal: Ganja, Shabu, Ekstasi, Kokain, Heroin/putaw.
+                  c. Hasil dari kejahatan Narkotika dan obat-obatan terlarang, misal: Ganja , Kokain, Heroin/putaw.
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -1420,7 +1420,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  d. Hasil dari kejahatan Psikotropika
+                  d. Hasil dari kejahatan Psikotropika misal ekstasi dan sabu-sabu
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -2575,7 +2575,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  y. Hasil dari kejahatan Penangkapan ikan secara liar atau kejahatan di bidang Kelautan dan Perikanan lainnya
+                  y. Hasil dari kejahatan Penangkapan ikan secara ilegal atau kejahatan di bidang Kelautan dan Perikanan lainnya
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -2700,7 +2700,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  b. Minimnya teladan yang baik dari Politisi dan Pejabat Pemerintah
+                  b. Minimnya teladan dari Politisi dan Pejabat Pemerintah
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -2755,7 +2755,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  c. Belum efektifnya pengawasan pelaksanaan aturan dalam Pencegahan dan Pemberantasan Pencucian Uang.
+                  c. Belum efektifnya pengawasan pelaksanaan aturan dalam Pencegahan dan Pemberantasan tindak pidana Pencucian Uang.
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -2920,7 +2920,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  f. Lemahnya peraturan dan pengawasan atas sistem pembayaran baru, khususnya mata uang virtual.
+                  f. Lemahnya peraturan dan pengawasan atas sistem pembayaran baru, khususnya mata uang virtual (digital) contoh Bit Coin
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -3030,7 +3030,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  h. Rentannya perkembangan teknologi digunakan sebagai sarana pencucian uang misalnya: <i>internet banking, e-payment,</i> dan <i> e-commerce</i>.
+                  h. Rentannya perkembangan teknologi sehingga mudah digunakan sebagai sarana pencucian uang misalnya: <i>internet banking, e-payment,</i> dan <i> e-commerce</i>.
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">
@@ -3195,7 +3195,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  k. Lemahnya ijin/keputusan pemerintah di bidang lingkungan hidup.
+                  k. Lemahnya pengawasan pemerintah di bidang lingkungan hidup.
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">

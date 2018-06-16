@@ -30,21 +30,16 @@
                   <div class="col-md-8 ">
                     a. Apakah Saudara/i setuju seseorang yang menginginkan perubahan atau pembaharuan sosial dan politik secara drastis atau dengan cara kekerasan dikatakan memiliki paham radikalisme : <b class="text-danger">*</b>
                   </div>
-                  <div class="col-md-4">
-                    <table class="table table-bordered">
-                      <tr>
-                        <td>
+                  <div class="col-md-2">
                           <div class="radio">
                             <label><input type="radio" name="p1101a" required ng-model="kuesioner.k.p1101a" value="Ya">Ya</label>
                           </div>
-                        </td>
-                        <td>
+                  </div>
+                  <div class="col-md-2">
+                       
                           <div class="radio">
                             <label><input type="radio" name="p1101a" required ng-model="kuesioner.k.p1101a" value="Tidak">Tidak</label>
                           </div>
-                        </td>
-                      </tr>
-                    </table>
                   </div>
                 </div>
               </div>
@@ -66,21 +61,17 @@
                   <div class="col-md-8 ">
                     b. Apakah ditempat Saudara/i pernah mendengar adanya para pihak melakukan kegiatan-kegiatan yang mengarah ke radikalisme : <b class="text-danger">*</b>
                   </div>
-                  <div class="col-md-4">
-                    <table class="table table-bordered">
-                      <tr>
-                        <td>
+                  <div class="col-md-2">
+                    
                           <div class="radio">
                             <label><input type="radio" name="p1101b" required ng-model="kuesioner.k.p1101b" value="Ya">Ya</label>
                           </div>
-                        </td>
-                        <td>
+                  </div>
+                  <div class="col-md-2">
                           <div class="radio">
                             <label><input type="radio" name="p1101b" required ng-model="kuesioner.k.p1101b" value="Tidak">Tidak</label>
                           </div>
-                        </td>
-                      </tr>
-                    </table>
+                        
                   </div>
                 </div>
               </div>
@@ -91,14 +82,10 @@
                     <div class="col-md-4">
                         c. Jika "Ya", sebutkan kegiatan tersebut : <b class="text-danger">*</b> 
                     </div>
-                    <div class="col-md-9">
-                      <table class="table table-bordered">
-                        <tr>
-                          <td>
+                    <br>
+                    <div class="col-md-12">
+                      
                               <textarea type="text" class="form-control" placeholder="Sebutkan..........." name="p1101c"  ng-required="kuesioner.k.p1101b == 'Ya'" ng-disabled="kuesioner.k.p1101b == 'Tidak'" ng-model="kuesioner.k.p1101c"></textarea>
-                          </td>
-                        </tr>
-                      </table>
                     </div>
                   </div>
             </div>
@@ -452,17 +439,14 @@
                         Menurut Saudara/i, siapakah Pihak yang perlu berperan dalam mencegah paham radikalisme : <b class="text-danger">*</b>
                         <br><b></b> 
                     </div>
-                     <div class="col-md-9" style="margin-left: -10px;"> 
-                        <table class="table table-bordered">
-                          <tr>
-                            <td>
+                     <div class="col-md-12" > 
+                        
                                 <textarea type="text" class="form-control" placeholder="Sebutkan dan dalam bentuk apa : .............................................................................................................................................................................................................................................. " name="p1103"  ng-model="kuesioner.k.p1103">  </textarea>
-                            </td>
-                          </tr>
-                        </table>
+                            
                       </div>
                   </div>
             </div>
+            <br>
              <div class="form-group">
               <div class="col-md-1 col-nomor">1104.</div>
               <div class="col-md-11 col-soal">
@@ -537,5 +521,6 @@
       </div>
     </div>
   </div>
+
 
 </section>

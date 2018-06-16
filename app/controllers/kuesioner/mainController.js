@@ -401,19 +401,10 @@
           if(dataSubmit.p202b61  != 'Ya'){ dataSubmit.p202b62 = ''; }
           if(dataSubmit.p202b71  != 'Ya'){ dataSubmit.p202b72 = ''; }
           if(dataSubmit.p202b81  != 'Ya'){ dataSubmit.p202b82 = ''; }
-          if(dataSubmit.p203a11  != 'Ya'){ dataSubmit.p203a12 = ''; }
-          if(dataSubmit.p203a21  != 'Ya'){ dataSubmit.p203a22 = ''; }
-          if(dataSubmit.p203a31  != 'Ya'){ dataSubmit.p203a32 = ''; }
-          if(dataSubmit.p203a41  != 'Ya'){ dataSubmit.p203a42 = ''; }
-          if(dataSubmit.p203a51  != 'Ya'){ dataSubmit.p203a52 = ''; }
-          if(dataSubmit.p203b11  != 'Ya'){ dataSubmit.p203b12 = ''; }
-          if(dataSubmit.p203b21  != 'Ya'){ dataSubmit.p203b22 = ''; }
-          if(dataSubmit.p203b31  != 'Ya'){ dataSubmit.p203b32 = ''; }
-          if(dataSubmit.p203b41  != 'Ya'){ dataSubmit.p203b42 = ''; }
         }
         // PENGATURAN GRUP C
         if (grup == 'c') {
-          if(dataSubmit.p303a == 'Ya'){ dataSubmit.p303b1 = ''; dataSubmit.p303b2 = ''; dataSubmit.p303b3 = ''; dataSubmit.parameter = ''; }
+          if(dataSubmit.p303a == 'Ya'){ dataSubmit.p303b1 = ''; dataSubmit.p303b2 = ''; dataSubmit.p303b3 = ''; dataSubmit.p303c  = ''; }
         }
         // PENGATURAN GRUP E
         if (grup == 'e') {
@@ -464,6 +455,27 @@
             dataSubmit.p802f = '';
           }
         }
+        if (grup == 'j') {
+          if(dataSubmit.p1001 == 'Tidak') {dataSubmit.p1002 =''; dataSubmit.p1003a =''; dataSubmit.p1003b1 =''; dataSubmit.p1003b2 ='';
+           dataSubmit.p1003b3 =''; dataSubmit.p1003b4 =''; dataSubmit.p1003b5 =''; dataSubmit.p1003b6 =''; dataSubmit.p1003b7 =''; 
+           dataSubmit.p1003b8 =''; dataSubmit.p1003b9 =''; dataSubmit.p1003b10 =''; dataSubmit.p1003b11 =''; dataSubmit.p1003b12 ='';
+           dataSubmit.p1003b13 =''; dataSubmit.p1004a =''; dataSubmit.p1004b =''; dataSubmit.p1004c =''; dataSubmit.p1004d =''; dataSubmit.p1004e ='';
+           dataSubmit.p1005a =''; dataSubmit.p1005b =''; dataSubmit.p1005c =''; dataSubmit.p1005d =''; dataSubmit.p1005e =''; dataSubmit.p1006a ='';
+           dataSubmit.p1006b1 =''; dataSubmit.p1006b2 =''; dataSubmit.p1006b3 =''; dataSubmit.p1006b4 =''; dataSubmit.p1006b5 =''; dataSubmit.p1006b6 ='';
+           dataSubmit.p1006b7 =''; dataSubmit.p1006b8 =''; dataSubmit.p1006b9 =''; dataSubmit.p1006b10 =''; dataSubmit.p1006b11 =''; dataSubmit.p1006b12 ='';
+           dataSubmit.p1007 ='';}
+
+           if (dataSubmit.p1003a == 'Tidak') {dataSubmit.p1003b1 =''; dataSubmit.p1003b2 ='';
+           dataSubmit.p1003b3 =''; dataSubmit.p1003b4 =''; dataSubmit.p1003b5 =''; dataSubmit.p1003b6 =''; dataSubmit.p1003b7 =''; 
+           dataSubmit.p1003b8 =''; dataSubmit.p1003b9 =''; dataSubmit.p1003b10 =''; dataSubmit.p1003b11 =''; dataSubmit.p1003b12 ='';
+           dataSubmit.p1003b13 ='';}
+           if (dataSubmit.p1006a == 'Tidak') { dataSubmit.p1006b1 =''; dataSubmit.p1006b2 =''; dataSubmit.p1006b3 =''; dataSubmit.p1006b4 =''; dataSubmit.p1006b5 =''; dataSubmit.p1006b6 ='';
+           dataSubmit.p1006b7 =''; dataSubmit.p1006b8 =''; dataSubmit.p1006b9 =''; dataSubmit.p1006b10 =''; dataSubmit.p1006b11 =''; dataSubmit.p1006b12 ='';}
+         }
+
+         if (grup == 'l') {
+          if (dataSubmit.p1202a == 'Tidak') {dataSubmit.p1202b =''}
+         }
         var data = {
           'jawaban' : dataSubmit,
           'tabel'   : tableTujuan,

@@ -19,14 +19,14 @@
   <div class="alert alert-danger"><span class="fa fa-warning"></span> PERHATIAN !! Sudah Ada Data Kuesioner Untuk Nomor Kuesioner {{kuesioner.nomor_kuesioner}}, Silakan Update Jawaban Pada Form Berikut.</div>
 </div>
 
-<div ng-if="kuesioner.f.p603a == 'Tidak' && kuesioner.f.parameter == '0'">
+<div ng-if="kuesioner.f.p603a == 'Tidak' && kuesioner.f.p603c == 'Tidak'">
   <br>
   <div class="alert alert-danger"><span class="fa fa-warning"></span> PERHATIAN !! Tidak Tersedia Form G Karena Jawaban 603 = 'Tidak', Dan Responden Tidak Merubah Jawaban Menjadi 'Ya'.</div>
 </div>
 
 
 <!-- Main content -->
-<section class="content" ng-if="kuesioner.f.p603a == 'Ya' || kuesioner.f.parameter == '1'">
+<section class="content" ng-if="kuesioner.f.p603a == 'Ya' || kuesioner.f.p603c == 'Ya'">
   <div class="row">
     <div class="col-md-12">
       <div class="box box-primary">
@@ -41,7 +41,7 @@
               <div class="col-md-1 col-nomor"><label>701.</label></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-5">
-                  <label> Menurut Saudara/i, seberapa besar potensi terjadinya Pendanaan Terorisme di Provinsi tempat tinggal Saudara/i? <b class="text-danger">*</b> </label> <br>
+                  <label> Menurut Saudara/i, seberapa besar potensi terjadinya kegiatan Pendanaan Terorisme di Provinsi tempat tinggal Saudara/i? <b class="text-danger">*</b> </label> <br>
                   (tulis jawaban antara 1-10)
                 </div>
                 <div class="col-md-3">
@@ -333,7 +333,7 @@
               <div class="col-md-1 col-nomor"></div>
               <div class="col-md-11 col-soal">
                 <div class="col-md-8">
-                  b. Pengusaha/Wiraswasta (UMKM, Pengusaha Konveksi, Pengusaha Peternakan, Pemilik Usaha Kerajinan, dll
+                  b. Pengusaha/Wiraswasta (UMKM, Pengusaha Konveksi, Pengusaha Peternakan, Pemilik Usaha Kerajinan, dll)
                 </div>
                 <div class="col-md-4">
                   <table class="table table-bordered">

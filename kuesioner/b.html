@@ -49,7 +49,7 @@
                       <label><input type="radio" name="p201" required value="Pegawai Swasta/Karyawan" ng-model="kuesioner.b.p201">                      Pegawai Swasta/Karyawan</label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="p201" required value="Profesional (Pengacara, Akuntan, Notaris, dll)" ng-model="kuesioner.b.p201">Profesional (Pengacara, Akuntan, Notaris, dll)</label>
+                      <label><input type="radio" name="p201" required value="Profesi Tertentu (Pengacara, Akuntan, Notaris)" ng-model="kuesioner.b.p201">Profesi Tertentu (Pengacara, Akuntan, Notaris)</label>
                     </div>
                     <div class="radio">
                       <label><input type="radio" name="p201" required value="Pegawai Bank, BUMN/D, Jasa Pengiriman Uang, Pedagang Valuta Asing" ng-model="kuesioner.b.p201">Pegawai Bank, BUMN/D, Jasa Pengiriman Uang, Pedagang Valuta Asing</label>
@@ -72,14 +72,11 @@
                       <label><input type="radio" name="p201" required value="Pengurus/Anggota Organisasi Kemasyarakatan (selain Parpol)" ng-model="kuesioner.b.p201">Pengurus/Anggota Organisasi Kemasyarakatan (selain Parpol)</label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="p201" required value="Petani/Nelayan, Pengrajin, Buruh Lepas, Pedagang, dll" ng-model="kuesioner.b.p201">Petani/Nelayan, Pengrajin, Buruh Lepas, Pedagang, dll</label>
+                      <label><input type="radio" name="p201" required value="Petani/Nelayan, Pengrajin, Buruh Lepas, Pedagang" ng-model="kuesioner.b.p201">Petani/Nelayan, Pengrajin, Buruh Lepas, Pedagang</label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="p201" required value="Profesi Lainnya" ng-model="kuesioner.b.p201">Profesi Lainnya</label>
+                      <label><input type="radio" name="p201" required value="Profesi Lainnya" ng-model="kuesioner.b.p201">Profesi Lainnya (Tidak bekerja/ Sementara tidak bekerja)</label>
                       <input type="text" name="p201x" class="form-control" ng-model="kuesioner.b.p201x" placeholder="Sebutkan" ng-if="kuesioner.b.p201 == 'Profesi Lainnya'" ng-required="kuesioner.b.p201 == 'Profesi Lainnya'">
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" name="p201" required value="Tidak bekerja/ Sementara tidak bekerja" ng-model="kuesioner.b.p201">Tidak bekerja/ Sementara tidak bekerja</label>
                     </div>
                   </div>
                 </div>
@@ -98,8 +95,8 @@
                     <thead>
                       <tr>
                         <th width="35%">Lembaga keuangan</th>
-                        <th>1.  Apakah menjadi nasabah?</th>
-                        <th>2.  Jika ‘Ya‘, sudah berapa lama menjadi nasabah?</th>
+                        <th>1.  Apakah menjadi pengguna jasa?</th>
+                        <th>2.  Jika ‘Ya‘, sudah berapa tahun menjadi pengguna jasa?</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -235,7 +232,7 @@
                       </tr>
 
                       <tr>
-                        <td> &nbsp;&nbsp;&nbsp; 7. <i>Money Changer</i></td>
+                        <td> &nbsp;&nbsp;&nbsp; 7. Penukaran<i> Valuta Asing</i></td>
                         <td>
                           <div class="radio">
                             <label><input type="radio" name="p202b71" required value="Ya"     ng-model="kuesioner.b.p202b71"> Ya </label>
@@ -253,7 +250,7 @@
                       </tr>
 
                       <tr>
-                        <td> &nbsp;&nbsp;&nbsp; 8. Pengiriman Dana (Western Union, MoneyGram)</td>
+                        <td> &nbsp;&nbsp;&nbsp; 8. Pengiriman Dana</td>
                         <td>
                           <div class="radio">
                             <label><input type="radio" name="p202b81" required value="Ya"     ng-model="kuesioner.b.p202b81"> Ya </label>
@@ -288,8 +285,7 @@
                     <thead>
                       <tr>
                         <th width="35%">Non Lembaga keuangan</th>
-                        <th>Pernah Bertransaksi di Lembaga berikut?</th>
-                        <th>Jika ‘Ya‘, kapan transaksi terkahir dilakukan?</th>
+                        <th >Pernah Bertransaksi di Lembaga berikut?</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -302,16 +298,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 1. Perusahaan/Agen Properti</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203a11" required value="Ya"     ng-model="kuesioner.b.p203a11"> Ya </label>
-                            <label><input type="radio" name="p203a11" required value="Tidak"  ng-model="kuesioner.b.p203a11"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203a12" required value="< 1 tahun"  ng-model="kuesioner.b.p203a12" ng-disabled="kuesioner.b.p203a11 == 'Tidak'" ng-required="kuesioner.b.p203a11 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203a12" required value="1-5 tahun"  ng-model="kuesioner.b.p203a12" ng-disabled="kuesioner.b.p203a11 == 'Tidak'" ng-required="kuesioner.b.p203a11 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203a12" required value="6-10 tahun" ng-model="kuesioner.b.p203a12" ng-disabled="kuesioner.b.p203a11 == 'Tidak'" ng-required="kuesioner.b.p203a11 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203a12" required value="> 10 tahun" ng-model="kuesioner.b.p203a12" ng-disabled="kuesioner.b.p203a11 == 'Tidak'" ng-required="kuesioner.b.p203a11 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203a1" required value="Ya"     ng-model="kuesioner.b.p203a1"> Ya </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label><input type="radio" name="p203a1" required value="Tidak"  ng-model="kuesioner.b.p203a1"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -320,16 +312,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 2. Perusahaan Kendaraan Bermotor</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203a21" required value="Ya"     ng-model="kuesioner.b.p203a21"> Ya </label>
-                            <label><input type="radio" name="p203a21" required value="Tidak"  ng-model="kuesioner.b.p203a21"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203a22" required value="< 1 tahun"  ng-model="kuesioner.b.p203a22" ng-disabled="kuesioner.b.p203a21 == 'Tidak'" ng-required="kuesioner.b.p203a21 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203a22" required value="1-5 tahun"  ng-model="kuesioner.b.p203a22" ng-disabled="kuesioner.b.p203a21 == 'Tidak'" ng-required="kuesioner.b.p203a21 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203a22" required value="6-10 tahun" ng-model="kuesioner.b.p203a22" ng-disabled="kuesioner.b.p203a21 == 'Tidak'" ng-required="kuesioner.b.p203a21 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203a22" required value="> 10 tahun" ng-model="kuesioner.b.p203a22" ng-disabled="kuesioner.b.p203a21 == 'Tidak'" ng-required="kuesioner.b.p203a21 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203a2" required value="Ya"     ng-model="kuesioner.b.p203a2"> Ya </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label><input type="radio" name="p203a2" required value="Tidak"  ng-model="kuesioner.b.p203a2"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -338,16 +326,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 3. Pedagang Permata dan Perhiasan/Logam Mulia</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203a31" required value="Ya"     ng-model="kuesioner.b.p203a31"> Ya </label>
-                            <label><input type="radio" name="p203a31" required value="Tidak"  ng-model="kuesioner.b.p203a31"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203a32" required value="< 1 tahun"  ng-model="kuesioner.b.p203a32" ng-disabled="kuesioner.b.p203a31 == 'Tidak'" ng-required="kuesioner.b.p203a31 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203a32" required value="1-5 tahun"  ng-model="kuesioner.b.p203a32" ng-disabled="kuesioner.b.p203a31 == 'Tidak'" ng-required="kuesioner.b.p203a31 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203a32" required value="6-10 tahun" ng-model="kuesioner.b.p203a32" ng-disabled="kuesioner.b.p203a31 == 'Tidak'" ng-required="kuesioner.b.p203a31 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203a32" required value="> 10 tahun" ng-model="kuesioner.b.p203a32" ng-disabled="kuesioner.b.p203a31 == 'Tidak'" ng-required="kuesioner.b.p203a31 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                                <label><input type="radio" name="p203a3" required value="Ya"     ng-model="kuesioner.b.p203a3"> Ya </label>
+                             </div> 
+                            <div class="col-md-4">  
+                                <label><input type="radio" name="p203a3" required value="Tidak"  ng-model="kuesioner.b.p203a3"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -356,16 +340,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 4. Pedagang Barang Seni dan Antik</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203a41" required value="Ya"     ng-model="kuesioner.b.p203a41"> Ya </label>
-                            <label><input type="radio" name="p203a41" required value="Tidak"  ng-model="kuesioner.b.p203a41"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203a42" required value="< 1 tahun"  ng-model="kuesioner.b.p203a42" ng-disabled="kuesioner.b.p203a41 == 'Tidak'" ng-required="kuesioner.b.p203a41 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203a42" required value="1-5 tahun"  ng-model="kuesioner.b.p203a42" ng-disabled="kuesioner.b.p203a41 == 'Tidak'" ng-required="kuesioner.b.p203a41 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203a42" required value="6-10 tahun" ng-model="kuesioner.b.p203a42" ng-disabled="kuesioner.b.p203a41 == 'Tidak'" ng-required="kuesioner.b.p203a41 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203a42" required value="> 10 tahun" ng-model="kuesioner.b.p203a42" ng-disabled="kuesioner.b.p203a41 == 'Tidak'" ng-required="kuesioner.b.p203a41 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203a4" required value="Ya"     ng-model="kuesioner.b.p203a4"> Ya </label>
+                            </div>
+                            <div class="col-md-4"> 
+                              <label><input type="radio" name="p203a4" required value="Tidak"  ng-model="kuesioner.b.p203a4"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -374,16 +354,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 5. Balai Lelang</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203a51" required value="Ya"     ng-model="kuesioner.b.p203a51"> Ya </label>
-                            <label><input type="radio" name="p203a51" required value="Tidak"  ng-model="kuesioner.b.p203a51"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203a52" required value="< 1 tahun"  ng-model="kuesioner.b.p203a52" ng-disabled="kuesioner.b.p203a51 == 'Tidak'" ng-required="kuesioner.b.p203a51 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203a52" required value="1-5 tahun"  ng-model="kuesioner.b.p203a52" ng-disabled="kuesioner.b.p203a51 == 'Tidak'" ng-required="kuesioner.b.p203a51 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203a52" required value="6-10 tahun" ng-model="kuesioner.b.p203a52" ng-disabled="kuesioner.b.p203a51 == 'Tidak'" ng-required="kuesioner.b.p203a51 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203a52" required value="> 10 tahun" ng-model="kuesioner.b.p203a52" ng-disabled="kuesioner.b.p203a51 == 'Tidak'" ng-required="kuesioner.b.p203a51 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203a5" required value="Ya"     ng-model="kuesioner.b.p203a5"> Ya </label>
+                            </div>
+                            <div class="col-md-4"> 
+                              <label><input type="radio" name="p203a5" required value="Tidak"  ng-model="kuesioner.b.p203a5"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -391,23 +367,18 @@
                       <tr>
                         <th>B. Jasa Profesi</th>
                         <th>Pernah Menggunakan jasa profesi berikut?</th>
-                        <th>Jika ‘Ya‘, kapan terkahir menggunakan jasa profesi tersebut?</th>
                       </tr>
 
                       <tr>
                         <td> &nbsp;&nbsp;&nbsp; 1. Advokat</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203b11" required value="Ya"     ng-model="kuesioner.b.p203b11"> Ya </label>
-                            <label><input type="radio" name="p203b11" required value="Tidak"  ng-model="kuesioner.b.p203b11"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203b12" required value="< 1 tahun"  ng-model="kuesioner.b.p203b12" ng-disabled="kuesioner.b.p203b11 == 'Tidak'" ng-required="kuesioner.b.p203b11 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203b12" required value="1-5 tahun"  ng-model="kuesioner.b.p203b12" ng-disabled="kuesioner.b.p203b11 == 'Tidak'" ng-required="kuesioner.b.p203b11 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203b12" required value="6-10 tahun" ng-model="kuesioner.b.p203b12" ng-disabled="kuesioner.b.p203b11 == 'Tidak'" ng-required="kuesioner.b.p203b11 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203b12" required value="> 10 tahun" ng-model="kuesioner.b.p203b12" ng-disabled="kuesioner.b.p203b11 == 'Tidak'" ng-required="kuesioner.b.p203b11 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203b1" required value="Ya"     ng-model="kuesioner.b.p203b1"> Ya </label>
+                            </div>
+                            <div class="col-md-4"> 
+                              <label><input type="radio" name="p203b1" required value="Tidak"  ng-model="kuesioner.b.p203b1"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -416,16 +387,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 2. Notaris/PPAT</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203b21" required value="Ya"     ng-model="kuesioner.b.p203b21"> Ya </label>
-                            <label><input type="radio" name="p203b21" required value="Tidak"  ng-model="kuesioner.b.p203b21"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203b22" required value="< 1 tahun"  ng-model="kuesioner.b.p203b22" ng-disabled="kuesioner.b.p203b21 == 'Tidak'" ng-required="kuesioner.b.p203b21 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203b22" required value="1-5 tahun"  ng-model="kuesioner.b.p203b22" ng-disabled="kuesioner.b.p203b21 == 'Tidak'" ng-required="kuesioner.b.p203b21 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203b22" required value="6-10 tahun" ng-model="kuesioner.b.p203b22" ng-disabled="kuesioner.b.p203b21 == 'Tidak'" ng-required="kuesioner.b.p203b21 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203b22" required value="> 10 tahun" ng-model="kuesioner.b.p203b22" ng-disabled="kuesioner.b.p203b21 == 'Tidak'" ng-required="kuesioner.b.p203b21 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203b2" required value="Ya"     ng-model="kuesioner.b.p203b2"> Ya </label>
+                            </div>
+                            <div class="col-md-4"> 
+                              <label><input type="radio" name="p203b2" required value="Tidak"  ng-model="kuesioner.b.p203b2"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -434,16 +401,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 3. Akuntan/Akuntan Publik</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203b31" required value="Ya"     ng-model="kuesioner.b.p203b31"> Ya </label>
-                            <label><input type="radio" name="p203b31" required value="Tidak"  ng-model="kuesioner.b.p203b31"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203b32" required value="< 1 tahun"  ng-model="kuesioner.b.p203b32" ng-disabled="kuesioner.b.p203b31 == 'Tidak'" ng-required="kuesioner.b.p203b31 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203b32" required value="1-5 tahun"  ng-model="kuesioner.b.p203b32" ng-disabled="kuesioner.b.p203b31 == 'Tidak'" ng-required="kuesioner.b.p203b31 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203b32" required value="6-10 tahun" ng-model="kuesioner.b.p203b32" ng-disabled="kuesioner.b.p203b31 == 'Tidak'" ng-required="kuesioner.b.p203b31 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203b32" required value="> 10 tahun" ng-model="kuesioner.b.p203b32" ng-disabled="kuesioner.b.p203b31 == 'Tidak'" ng-required="kuesioner.b.p203b31 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203b3" required value="Ya"     ng-model="kuesioner.b.p203b3"> Ya </label>
+                            </div>
+                            <div class="col-md-4"> 
+                              <label><input type="radio" name="p203b3" required value="Tidak"  ng-model="kuesioner.b.p203b3"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -452,16 +415,12 @@
                         <td> &nbsp;&nbsp;&nbsp; 4. Perencana Keuangan</td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p203b41" required value="Ya"     ng-model="kuesioner.b.p203b41"> Ya </label>
-                            <label><input type="radio" name="p203b41" required value="Tidak"  ng-model="kuesioner.b.p203b41"> Tidak </label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="radio">
-                            <label><input type="radio" name="p203b42" required value="< 1 tahun"  ng-model="kuesioner.b.p203b42" ng-disabled="kuesioner.b.p203b41 == 'Tidak'" ng-required="kuesioner.b.p203b41 == 'Ya'"> < 1 tahun</label>
-                            <label><input type="radio" name="p203b42" required value="1-5 tahun"  ng-model="kuesioner.b.p203b42" ng-disabled="kuesioner.b.p203b41 == 'Tidak'" ng-required="kuesioner.b.p203b41 == 'Ya'"> 1-5 tahun</label>
-                            <label><input type="radio" name="p203b42" required value="6-10 tahun" ng-model="kuesioner.b.p203b42" ng-disabled="kuesioner.b.p203b41 == 'Tidak'" ng-required="kuesioner.b.p203b41 == 'Ya'"> 6-10 tahun</label>
-                            <label><input type="radio" name="p203b42" required value="> 10 tahun" ng-model="kuesioner.b.p203b42" ng-disabled="kuesioner.b.p203b41 == 'Tidak'" ng-required="kuesioner.b.p203b41 == 'Ya'"> > 10 tahun</label>
+                            <div class="col-md-2">
+                              <label><input type="radio" name="p203b4" required value="Ya"     ng-model="kuesioner.b.p203b4"> Ya </label>
+                            </div>
+                            <div class="col-md-4"> 
+                              <label><input type="radio" name="p203b4" required value="Tidak"  ng-model="kuesioner.b.p203b4"> Tidak </label>
+                            </div>
                           </div>
                         </td>
                       </tr>

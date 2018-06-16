@@ -18,6 +18,7 @@
 
 
 <!-- Main Content -->
+          
 
 <section class="content">
   <div class="row">
@@ -35,22 +36,18 @@
                 Apakah Saudara/i mengetahui adanya pemilu Kepala Daerah 2018 ditempat Saudara/i : <b class="text-danger">*</b><br>
                 <b><i>(Jika "Tidak", wawancara dilanjutkan ke Blok K)</i></b>
               </div>
-              <div class="col-md-4">
-                <table class="table table-bordered">
-                  <tr>
-                    <td>
+            
+              <div class="col-md-2">
                       <div class="radio">
-                        <label><input type="radio" name="p1001" required ng-disabled="kuesioner.alert.j" ng-model="kuesioner.j.p1001" value="Ya">Ya</label>
+                        <label><input type="radio" name="p1001" required  ng-model="kuesioner.j.p1001" value="Ya">Ya</label>
                       </div>
-                    </td>
-                    <td>
-                      <div class="radio">
-                        <label><input type="radio" name="p1001" required ng-disabled="kuesioner.alert.j" ng-model="kuesioner.j.p1001" value="Tidak">Tidak</label>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
               </div>
+              <div class="col-md-2">
+                      <div class="radio">
+                        <label><input type="radio" name="p1001" required  ng-model="kuesioner.j.p1001" value="Tidak">Tidak</label>
+                      </div>
+              </div>
+              
             </div>
           </div>
           <br>
@@ -63,47 +60,34 @@
                 Menurut Saudara/i, hal apa saja yang menjadi motivasi dalam memilih pada Pemilukada : <b class="text-danger">*</b>
               </div>
               <br>
-              <div class="col-md-4">
-                <table class="table table-bordered">
-                  <tr>
-                    <td >
+              <div class="col-md-3">
+               
                       <div class="radio">
-                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"  ng-model="kuesioner.j.p1002" value="Ideologi">Ideologi</label>
+                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "  ng-model="kuesioner.j.p1002" value="Ideologi">Ideologi</label>
                       </div>
-                    </td>
-                    <td>
+                    
                       <div class="radio">
-                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"  ng-model="kuesioner.j.p1002" value="Janji Politik">Janji Politik</label>
+                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "  ng-model="kuesioner.j.p1002" value="Janji Politik">Janji Politik</label>
                       </div>
-                    </td>
-
-                  </tr>
-                    <tr>
-                    <td >
+                
                       <div class="radio">
-                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"  ng-model="kuesioner.j.p1002" value="Visi Misi/Program">Visi Misi/Program</label>
+                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "  ng-model="kuesioner.j.p1002" value="Visi Misi/Program">Visi Misi/Program</label>
                       </div>
-                    </td>
-                    <td>
+            </div>
+            <div class="col-md-4">
+            
                       <div class="radio">
-                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"  ng-model="kuesioner.j.p1002" value="Akses/Kedekatan">Akses/Kedekatan</label>
+                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "  ng-model="kuesioner.j.p1002" value="Akses/Kedekatan">Akses/Kedekatan</label>
                       </div>
-                    </td>
-
-                  </tr>
-                    <tr>
-                    <td >
+                    
                       <div class="radio">
-                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"  ng-model="kuesioner.j.p1002" value="Prestasi dan Kinerja">Prestasi dan Kinerja</label>
+                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "  ng-model="kuesioner.j.p1002" value="Prestasi dan Kinerja">Prestasi dan Kinerja</label>
                       </div>
-                    </td>
-                    <td>
+                    
                       <div class="radio">
-                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"  ng-model="kuesioner.j.p1002" value="Hadiah/Sumbangan">Hadiah/Sumbangan</label>
+                        <label><input type="radio" name="p1002" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "  ng-model="kuesioner.j.p1002" value="Hadiah/Sumbangan">Hadiah/Sumbangan</label>
                       </div>
-                    </td>       
-                  </tr>   
-                </table>
+                    
               </div>
             </div>
             </div>
@@ -117,21 +101,17 @@
                     a. &nbsp;Apakah Saudara/i pernah mencurigai/melihat/mendengar adanya indikasi kegiatan politik uang yang dilakukan secara terstruktur, 
                     sistematis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dan masif : <b class="text-danger">*</b>
              </div>
-             <div class="col-md-4">
-                <table class="table table-bordered">
-                  <tr>
-                    <td>
+            
+                    <div class="col-md-2">
                       <div class="radio">
-                        <label><input type="radio" name="p1003a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003a" value="Ya">Ya</label>
+                        <label><input type="radio" name="p1003a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003a" value="Ya">Ya</label>
                       </div>
-                    </td>
-                    <td>
+                    </div>
+                    <div class="col-md-2">
                       <div class="radio">
-                        <label><input type="radio" name="p1003a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003a" value="Tidak">Tidak</label>
+                        <label><input type="radio" name="p1003a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003a" value="Tidak">Tidak</label>
                       </div>
-                    </td>
-                  </tr>
-                </table>
+                    <div>
               </div>
             </div>
          </div>
@@ -147,209 +127,286 @@
 
          <div class="form-group">
            <div class="col-md-7 col-md-offset-1">1) Pemberian Maha Politik untuk mendapatkan dukungan Partai Politik bagi Pasangan Calon (Paslon) saat Pendaftaran Calon</div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b1" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b1" value="Pernah">Pernah</label>
+           <div>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b1" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b1" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b1"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b1" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b1"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b1" value="Tidak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   2) Pemberian janji mendapatkan paket pekerjaan dalam pengadaan barang dan jasa kepada sekelompok orang jika terpilih 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b2"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b2" value="Pernah">Pernah</label>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b2" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b2" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b2"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b2" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b2"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b2" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
           <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   3) Pemberian Uang untuk mempengaruhi Daftar Pemilih Tetap (DPT) 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b3"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b3" value="Pernah">Pernah</label>
+            <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b3" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b3" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b3"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b3" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b3"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b3" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   4) Penyalahgunaan Dana Desa atau Dana Pembangunan untuk memenangkan salah satu Pasangan Calon 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b4"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b4" value="Pernah">Pernah</label>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b4" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b4" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b4"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b4" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b4"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b4" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
-
+                </table>
+            </div>
           <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   5) Pemberian Bantuan Sosial berupa pembangunan tempat ibadah, perbaikan jalan dari calon peserta pemilukada 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b5"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b5" value="Pernah">Pernah</label>
+            <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b5" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b5" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b5"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b5" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b5"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b5" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
           <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   6) Pemberian uang kepada Aparat Pemerintah Kelurahan/Desa untuk mempengaruhi pemilih 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b6"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b6" value="Pernah">Pernah</label>
+            <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b6" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b6" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b6"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b6" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b6"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b6" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
           <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   7) Pemberian uang kepada Tokoh Masyarakat (Tokoh Agama, Tokoh Adat, Tokoh Masyarakat) untuk mempengaruhi pemilih 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b7"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b7" value="Pernah">Pernah</label>
+            <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b7" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b7" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b7"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b7" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b7"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b7" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   8) Pemberian sembako dari calon peserta pemilukada 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b8"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b8" value="Pernah">Pernah</label>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b8" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b8" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b8"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b8" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b8"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b8" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   9) Pemberian Uang pada masa tenang melalui kampanye hitam (ujaran kebencian, hoaks atau desus-desus) 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b9"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b9" value="Pernah">Pernah</label>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b9" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b9" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b9"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b9" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b9"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b9" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   10) Pemberian sejumlah uang/barang sebelum pada hari pencoblosan 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b10"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b10" value="Pernah">Pernah</label>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b10" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b10" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b10"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b10" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b10"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b10" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   11) Rekayasas Hasil Perhitungan suara untuk dibayar kemudian (pasca bayar) 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b11"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b11" value="Pernah">Pernah</label>
+            <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b11" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b11" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b11"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b11" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b11"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b11" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
-
+                </table>
+            </div>
           <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   12) Penyuapan kepada hakim agar memenangkan perkara segnketa Pilkada (jika terdapat sengketa) 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b12"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b12" value="Pernah">Pernah</label>
+            <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b12" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b12" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b12"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b12" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b12"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b12" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
 
          <div class="form-group">
               <div class="col-md-7 col-md-offset-1">
                   13) Penyuapan kepada Penyelenggara Pemilu/Pemilukada 
               </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b13"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b13" value="Pernah">Pernah</label>
+           <div class="col-md-4">
+               <table class="table table-bordered">
+                <tr>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b13" ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b13" value="Pernah">Pernah</label>
+                          </div>  
+                    </td>
+                    <td>
+                          <div class="radio">
+                            <label><input type="radio" name="p1003b13"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1003b13" value="Tidak Pernah">Tidak Pernah</label>
+                          </div>
+                     </td>
+                  </tr>
                 </div>
-           </div>
-           <div class="col-md-2">
-                <div class="radio">
-                  <label><input type="radio" name="p1003b13"  ng-required="kuesioner.j.p1003a == 'Ya' || kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1003a == 'Tidak' || kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1003b13" value="TIdak Pernah">Tidak Pernah</label>
-                </div>
-           </div>
-         </div>
+                </table>
+            </div>
          <br>
 
          <div class="form-group">
@@ -375,42 +432,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="1">1</label>
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="7">7</label>
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="3">3</label>
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="9">9</label>
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="5">5</label>
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004a" value="10">10</label>
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004a" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -432,42 +489,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="1">1</label>
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="7">7</label>
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="3">3</label>
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="9">9</label>
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="5">5</label>
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004b" value="10">10</label>
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004b" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -488,42 +545,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="1">1</label>
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="7">7</label>
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="3">3</label>
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="9">9</label>
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="5">5</label>
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004c" value="10">10</label>
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004c" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -544,42 +601,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="1">1</label>
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="7">7</label>
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="3">3</label>
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="9">9</label>
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004d" value="5">5</label>
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j"    ng-model="kuesioner.j.p1004d" value="10">10</label>
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004d" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1004d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' "    ng-model="kuesioner.j.p1004d" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -598,7 +655,7 @@
                       <table class="table table-bordered">
                         <tr>
                           <td>
-                              <input type="text" class="form-control" placeholder="Sebutkan..........." name="p1004e" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1004e">  
+                              <input type="text" class="form-control" placeholder="Sebutkan..........." name="p1004e" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1004e">  
                           </td>
                         </tr>
                       </table>
@@ -629,42 +686,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="1">1</label>
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="7">7</label>
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="3">3</label>
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="9">9</label>
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="5">5</label>
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005a" value="10">10</label>
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005a" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005a" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -684,42 +741,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="1">1</label>
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="7">7</label>
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="3">3</label>
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="9">9</label>
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="5">5</label>
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005b" value="10">10</label>
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005b" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005b" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -739,42 +796,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="1">1</label>
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="7">7</label>
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="3">3</label>
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="9">9</label>
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="5">5</label>
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005c" value="10">10</label>
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005c" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005c" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -794,42 +851,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="1">1</label>
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="7">7</label>
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="3">3</label>
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="9">9</label>
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="5">5</label>
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005d" value="10">10</label>
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005d" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005d" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -849,42 +906,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="1">1</label>
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="7">7</label>
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="3">3</label>
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="9">9</label>
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="5">5</label>
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1005e" value="10">10</label>
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1005e" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1005e" value="10">10</label>
                         </div>
                       </td>
                     </tr>
@@ -905,12 +962,12 @@
                       <tr>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p1006a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1006a" value="Ya">Ya</label>
+                            <label><input type="radio" name="p1006a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1006a" value="Ya">Ya</label>
                           </div>
                         </td>
                         <td>
                           <div class="radio">
-                            <label><input type="radio" name="p1006a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1006a" value="Tidak">Tidak</label>
+                            <label><input type="radio" name="p1006a" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1006a" value="Tidak">Tidak</label>
                           </div>
                         </td>
                       </tr>
@@ -1619,42 +1676,42 @@
                     <tr>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="1">1</label>
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="1">1</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="6">6</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya' ||" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="2">2</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="7">7</label>
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="6">6</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="3">3</label>
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya' ||" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="2">2</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="8">8</label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="4">4</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="9">9</label>
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="7">7</label>
                         </div>
                       </td>
                       <td>
                         <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="5">5</label>
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="3">3</label>
                         </div>
                         <div class="radio">
-                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' || kuesioner.alert.j" ng-model="kuesioner.j.p1007" value="10">10</label>
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="8">8</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="4">4</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="9">9</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radio">
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="5">5</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="p1007" class="" ng-required="kuesioner.j.p1001 == 'Ya'" ng-disabled="kuesioner.j.p1001 == 'Tidak' " ng-model="kuesioner.j.p1007" value="10">10</label>
                         </div>
                       </td>
                     </tr>
