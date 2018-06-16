@@ -413,7 +413,7 @@
         }
         // PENGATURAN GRUP F
         if (grup == 'f') {
-          if(dataSubmit.p603a == 'Ya'){ dataSubmit.p603b1 = ''; dataSubmit.p603b2 = ''; dataSubmit.p603b3 = ''; dataSubmit.parameter = ''; }
+          if(dataSubmit.p603a == 'Ya'){ dataSubmit.p603b1 = ''; dataSubmit.p603b2 = ''; dataSubmit.p603b3 = ''; dataSubmit.p603c = ''; }
         }
         // PENGATURAN GRUP I
         if (grup == 'i') {
@@ -476,6 +476,22 @@
          if (grup == 'l') {
           if (dataSubmit.p1202a == 'Tidak') {dataSubmit.p1202b =''}
          }
+
+       if (grup == 'm') {
+        if (dataSubmit.p1301a == 'Tidak Pernah' && dataSubmit.p1301b == 'Tidak Pernah'
+            && dataSubmit.p1301c == 'Tidak Pernah' && dataSubmit.p1301d == 'Tidak Pernah' && dataSubmit.p1301e == 'Tidak Pernah'
+            && dataSubmit.p1301f == 'Tidak Pernah' && dataSubmit.p1301g == 'Tidak Pernah' && dataSubmit.p1301h == 'Tidak Pernah' 
+            && dataSubmit.p1301i == 'Tidak Pernah') {
+           dataSubmit.p1303a = '' ;
+           dataSubmit.p1303b = '' ; 
+           dataSubmit.p1303c = '' ; 
+           dataSubmit.p1303d = '' ;
+           dataSubmit.p1303e = '' ;
+           dataSubmit.p1303f = '' ;
+           dataSubmit.p1303g = '' ;
+           dataSubmit.p1303h = '' ; 
+          }
+       }
         var data = {
           'jawaban' : dataSubmit,
           'tabel'   : tableTujuan,

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2018 at 09:07 AM
+-- Generation Time: Jun 17, 2018 at 12:47 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.1.15
 
@@ -245,7 +245,182 @@ INSERT INTO `tbl_jwb_beda` (`id`, `nomor_kuesioner`, `grup`, `pertanyaan`) VALUE
 (340, '111006100102', 'm', 'p1303b'),
 (341, '111006100102', 'm', 'p1303c'),
 (342, '111006100102', 'm', 'p1303d'),
-(343, '111006100102', 'm', 'p1304');
+(343, '111006100102', 'm', 'p1304'),
+(344, '111006100110', 'c', 'p301a'),
+(345, '111006100110', 'c', 'p301b'),
+(346, '111006100110', 'c', 'p301e'),
+(347, '111006100110', 'c', 'p301f'),
+(348, '111006100110', 'c', 'p301i'),
+(349, '111006100110', 'c', 'p301j'),
+(350, '111006100110', 'c', 'p301k'),
+(351, '111006100110', 'c', 'p301l'),
+(352, '111006100110', 'c', 'p301m'),
+(353, '111006100110', 'c', 'p301n'),
+(354, '111006100110', 'c', 'p301o'),
+(355, '111006100110', 'c', 'p302a'),
+(356, '111006100110', 'c', 'p302b'),
+(357, '111006100110', 'c', 'p302c'),
+(358, '111006100110', 'c', 'p303a'),
+(359, '111006100110', 'c', 'p303c'),
+(360, '111006100110', 'c', 'p303b1'),
+(361, '111006100110', 'c', 'p303b2'),
+(362, '111006100110', 'c', 'p303b3'),
+(363, '111006100110', 'd', 'p401'),
+(364, '111006100110', 'd', 'p402'),
+(365, '111006100110', 'd', 'p403a1'),
+(366, '111006100110', 'd', 'p403a2'),
+(367, '111006100110', 'd', 'p403b'),
+(368, '111006100110', 'd', 'p403c'),
+(369, '111006100110', 'd', 'p403d'),
+(370, '111006100110', 'd', 'p403f'),
+(371, '111006100110', 'd', 'p403g'),
+(372, '111006100110', 'd', 'p403h'),
+(373, '111006100110', 'd', 'p403i'),
+(374, '111006100110', 'd', 'p403k'),
+(375, '111006100110', 'd', 'p403m'),
+(376, '111006100110', 'd', 'p404b'),
+(377, '111006100110', 'd', 'p404e'),
+(378, '111006100110', 'd', 'p405a'),
+(379, '111006100110', 'd', 'p405b'),
+(380, '111006100110', 'd', 'p405c'),
+(381, '111006100110', 'd', 'p405d'),
+(382, '111006100110', 'd', 'p405e'),
+(383, '111006100110', 'd', 'p405f'),
+(384, '111006100110', 'd', 'p405g'),
+(385, '111006100110', 'd', 'p405i'),
+(386, '111006100110', 'd', 'p405m'),
+(387, '111006100110', 'd', 'p405n'),
+(388, '111006100110', 'd', 'p405o'),
+(389, '111006100110', 'd', 'p405p'),
+(390, '111006100110', 'd', 'p405r'),
+(391, '111006100110', 'd', 'p405s'),
+(392, '111006100110', 'd', 'p405u'),
+(393, '111006100110', 'd', 'p405w'),
+(394, '111006100110', 'd', 'p405y'),
+(395, '111006100110', 'd', 'p406b'),
+(396, '111006100110', 'd', 'p406d'),
+(397, '111006100110', 'd', 'p406e'),
+(398, '111006100110', 'd', 'p406g'),
+(399, '111006100110', 'd', 'p406i'),
+(400, '111006100110', 'd', 'p406k'),
+(401, '111006100110', 'd', 'p406m'),
+(402, '111006100110', 'e', 'p501a'),
+(403, '111006100110', 'e', 'p502a'),
+(404, '111006100110', 'e', 'p501b1'),
+(405, '111006100110', 'e', 'p501b2'),
+(406, '111006100110', 'e', 'p501b3'),
+(407, '111006100110', 'e', 'p501b4'),
+(408, '111006100110', 'e', 'p501b5'),
+(409, '111006100110', 'e', 'p501b6'),
+(410, '111006100110', 'e', 'p501b7'),
+(411, '111006100110', 'e', 'p501b8'),
+(412, '111006100110', 'e', 'p502b1'),
+(413, '111006100110', 'e', 'p502b2'),
+(414, '111006100110', 'e', 'p502b3'),
+(415, '111006100110', 'e', 'p502b4'),
+(416, '111006100110', 'e', 'p502b5'),
+(417, '111006100110', 'e', 'p502b6'),
+(418, '111006100110', 'f', 'p601b'),
+(419, '111006100110', 'f', 'p601c'),
+(420, '111006100110', 'f', 'p601e'),
+(421, '111006100110', 'f', 'p601f'),
+(422, '111006100110', 'f', 'p601g'),
+(423, '111006100110', 'f', 'p601h'),
+(424, '111006100110', 'f', 'p602a'),
+(425, '111006100110', 'f', 'p602b'),
+(426, '111006100110', 'f', 'p602c'),
+(427, '111006100110', 'f', 'p602d'),
+(428, '111006100110', 'f', 'p603a'),
+(429, '111006100110', 'f', 'p603b1'),
+(430, '111006100110', 'f', 'p603b2'),
+(431, '111006100110', 'f', 'p603b3'),
+(432, '111006100110', 'f', 'p603c'),
+(433, '111006100110', 'g', 'p701'),
+(434, '111006100110', 'g', 'p702'),
+(435, '111006100110', 'g', 'p703a1'),
+(436, '111006100110', 'g', 'p703a3'),
+(437, '111006100110', 'g', 'p703b'),
+(438, '111006100110', 'g', 'p703c'),
+(439, '111006100110', 'g', 'p703d'),
+(440, '111006100110', 'g', 'p703e'),
+(441, '111006100110', 'g', 'p703f'),
+(442, '111006100110', 'g', 'p703g'),
+(443, '111006100110', 'g', 'p703i'),
+(444, '111006100110', 'g', 'p703j'),
+(445, '111006100110', 'g', 'p703k'),
+(446, '111006100110', 'g', 'p703m'),
+(447, '111006100110', 'g', 'p704a'),
+(448, '111006100110', 'g', 'p704b'),
+(449, '111006100110', 'g', 'p704d'),
+(450, '111006100110', 'g', 'p704e'),
+(451, '111006100110', 'g', 'p705a'),
+(452, '111006100110', 'g', 'p705b'),
+(453, '111006100110', 'g', 'p705c'),
+(454, '111006100110', 'g', 'p705d'),
+(455, '111006100110', 'g', 'p706a'),
+(456, '111006100110', 'g', 'p706c'),
+(457, '111006100110', 'g', 'p706d'),
+(458, '111006100110', 'g', 'p706e'),
+(459, '111006100110', 'g', 'p706g'),
+(460, '111006100110', 'g', 'p706h'),
+(461, '111006100110', 'g', 'p706i'),
+(462, '111006100110', 'g', 'p703h'),
+(463, '111006100110', 'h', 'p801c'),
+(464, '111006100110', 'h', 'p802a'),
+(465, '111006100110', 'h', 'p802b'),
+(466, '111006100110', 'h', 'p802c'),
+(467, '111006100110', 'h', 'p802d'),
+(468, '111006100110', 'h', 'p802e'),
+(469, '111006100110', 'h', 'p802f'),
+(470, '111006100110', 'i', 'p901a'),
+(471, '111006100110', 'i', 'p902a'),
+(472, '111006100110', 'i', 'p903a'),
+(473, '111006100110', 'i', 'p904a'),
+(474, '111006100110', 'i', 'p905a'),
+(475, '111006100110', 'i', 'p906a'),
+(476, '111006100110', 'i', 'p907a'),
+(477, '111006100110', 'i', 'p909a'),
+(478, '111006100110', 'i', 'p910a'),
+(479, '111006100110', 'i', 'p910c'),
+(480, '111006100110', 'i', 'p911a'),
+(481, '111006100110', 'i', 'p911c'),
+(482, '111006100110', 'i', 'p912c'),
+(483, '111006100110', 'i', 'p914c'),
+(484, '111006100110', 'i', 'p914d'),
+(485, '111006100110', 'i', 'p916c'),
+(486, '111006100110', 'i', 'p916d'),
+(487, '111006100110', 'i', 'p918c'),
+(488, '111006100110', 'i', 'p919c'),
+(489, '111006100110', 'i', 'p921c'),
+(490, '111006100110', 'i', 'p901b'),
+(491, '111006100110', 'i', 'p902b'),
+(492, '111006100110', 'i', 'p903b'),
+(493, '111006100110', 'i', 'p904b'),
+(494, '111006100110', 'i', 'p905b'),
+(495, '111006100110', 'i', 'p906b'),
+(496, '111006100110', 'i', 'p907b'),
+(497, '111006100110', 'i', 'p909b'),
+(498, '111006100110', 'i', 'p910b'),
+(499, '111006100110', 'i', 'p910d'),
+(500, '111006100110', 'i', 'p911b'),
+(501, '111006100110', 'i', 'p911d'),
+(502, '111006100110', 'i', 'p918d'),
+(503, '111006100110', 'i', 'p921d'),
+(504, '111006100110', 'k', 'p1101a'),
+(505, '111006100110', 'k', 'p1101b'),
+(506, '111006100110', 'k', 'p1102a'),
+(507, '111006100110', 'k', 'p1102b'),
+(508, '111006100110', 'k', 'p1102c'),
+(509, '111006100110', 'k', 'p1102d'),
+(510, '111006100110', 'k', 'p1102e'),
+(511, '111006100110', 'k', 'p1102f'),
+(512, '111006100110', 'k', 'p1103'),
+(513, '111006100110', 'k', 'p1104'),
+(514, '111006100110', 'l', 'p1203'),
+(515, '111006100110', 'm', 'p1301b'),
+(516, '111006100110', 'm', 'p1301c'),
+(517, '111006100110', 'm', 'p1301d'),
+(518, '111006100110', 'm', 'p1304');
 
 -- --------------------------------------------------------
 
@@ -274,7 +449,9 @@ CREATE TABLE `tbl_jwb_ed_a` (
 INSERT INTO `tbl_jwb_ed_a` (`nomor_kuesioner`, `p101`, `p102`, `p103`, `p1041`, `p1042`, `p105`, `p106`, `p107`, `p108`, `p109`) VALUES
 ('111006100101', 'Junius Fernando Pasaribu', 'Medan', 'Tidak Pernah', 3, 2, 'Anak', 'Laki-laki', '24-30 tahun', 'DIV/S1', 'Belum Kawin'),
 ('111006100102', 'kians', 'ajajajajjaj', 'Pernah', 2, 2, 'Famili Lain (Menantu, Cucu, Or', 'Laki-laki', '41-60 tahun', 'S3', 'Kawin'),
-('111006100103', 'adsfasdf', 'asdfsadfasdf', 'Pernah', 2, 2, 'Kepala Rumahtangga', 'Laki-laki', '17-23 tahun', 'Tidak tamat SD/sederajat', 'Kawin');
+('111006100103', 'adsfasdf', 'asdfsadfasdf', 'Pernah', 2, 2, 'Kepala Rumahtangga', 'Laki-laki', '17-23 tahun', 'Tidak tamat SD/sederajat', 'Kawin'),
+('111006100106', 'Kamal', 'Jl.Pahlawan Gg. Sindang Resmi RT 01/Rw 18 No .12 Kel bondongan', 'Tidak Pernah', 3, 0, 'Kepala Rumahtangga', 'Laki-laki', '31-40 tahun', 'DIV/S1', 'Kawin'),
+('111006100110', 'kians azizatikarna', 'Jl.Pahlawan', 'Pernah', 1, 1, 'Anak', 'Laki-laki', '17-23 tahun', 'DIV/S1', 'Belum Kawin');
 
 -- --------------------------------------------------------
 
@@ -304,32 +481,24 @@ CREATE TABLE `tbl_jwb_ed_b` (
   `p202b72` char(10) NOT NULL,
   `p202b81` char(5) NOT NULL,
   `p202b82` char(10) NOT NULL,
-  `p203a11` char(5) NOT NULL,
-  `p203a12` char(10) NOT NULL,
-  `p203a21` char(5) NOT NULL,
-  `p203a22` char(10) NOT NULL,
-  `p203a31` char(5) NOT NULL,
-  `p203a32` char(10) NOT NULL,
-  `p203a41` char(5) NOT NULL,
-  `p203a42` char(10) NOT NULL,
-  `p203a51` char(5) NOT NULL,
-  `p203a52` char(10) NOT NULL,
-  `p203b11` char(5) NOT NULL,
-  `p203b12` char(10) NOT NULL,
-  `p203b21` char(5) NOT NULL,
-  `p203b22` char(10) NOT NULL,
-  `p203b31` char(5) NOT NULL,
-  `p203b32` char(10) NOT NULL,
-  `p203b41` char(5) NOT NULL,
-  `p203b42` char(10) NOT NULL
+  `p203a1` char(5) NOT NULL,
+  `p203a2` char(5) NOT NULL,
+  `p203a3` char(5) NOT NULL,
+  `p203a4` char(5) NOT NULL,
+  `p203a5` char(5) NOT NULL,
+  `p203b1` char(5) NOT NULL,
+  `p203b2` char(5) NOT NULL,
+  `p203b3` char(5) NOT NULL,
+  `p203b4` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_ed_b`
 --
 
-INSERT INTO `tbl_jwb_ed_b` (`nomor_kuesioner`, `p201`, `p201x`, `p202a1`, `p202a2`, `p202b11`, `p202b12`, `p202b21`, `p202b22`, `p202b31`, `p202b32`, `p202b41`, `p202b42`, `p202b51`, `p202b52`, `p202b61`, `p202b62`, `p202b71`, `p202b72`, `p202b81`, `p202b82`, `p203a11`, `p203a12`, `p203a21`, `p203a22`, `p203a31`, `p203a32`, `p203a41`, `p203a42`, `p203a51`, `p203a52`, `p203b11`, `p203b12`, `p203b21`, `p203b22`, `p203b31`, `p203b32`, `p203b41`, `p203b42`) VALUES
-('111006100102', 'PNS/ASN (termasuk Pensiunan)', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '');
+INSERT INTO `tbl_jwb_ed_b` (`nomor_kuesioner`, `p201`, `p201x`, `p202a1`, `p202a2`, `p202b11`, `p202b12`, `p202b21`, `p202b22`, `p202b31`, `p202b32`, `p202b41`, `p202b42`, `p202b51`, `p202b52`, `p202b61`, `p202b62`, `p202b71`, `p202b72`, `p202b81`, `p202b82`, `p203a1`, `p203a2`, `p203a3`, `p203a4`, `p203a5`, `p203b1`, `p203b2`, `p203b3`, `p203b4`) VALUES
+('111006100106', 'Profesi Lainnya', 'asdfasdf', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+('111006100110', 'Profesi Lainnya', 'Pegawai Negri', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -361,15 +530,16 @@ CREATE TABLE `tbl_jwb_ed_c` (
   `p303b1` char(5) NOT NULL,
   `p303b2` char(5) NOT NULL,
   `p303b3` text NOT NULL,
-  `parameter` int(1) NOT NULL
+  `p303c` char(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_ed_c`
 --
 
-INSERT INTO `tbl_jwb_ed_c` (`nomor_kuesioner`, `p301a`, `p301b`, `p301c`, `p301d`, `p301e`, `p301f`, `p301g`, `p301h`, `p301i`, `p301j`, `p301k`, `p301l`, `p301m`, `p301n`, `p301o`, `p302a`, `p302b`, `p302c`, `p303a`, `p303b1`, `p303b2`, `p303b3`, `parameter`) VALUES
-('111006100102', 3, 9, 4, 10, 4, 8, 9, 9, 4, 9, 10, 5, 5, 5, 4, 'Tidak', 'Tidak', 'Tidak', 'Ya', '', '', '', 0);
+INSERT INTO `tbl_jwb_ed_c` (`nomor_kuesioner`, `p301a`, `p301b`, `p301c`, `p301d`, `p301e`, `p301f`, `p301g`, `p301h`, `p301i`, `p301j`, `p301k`, `p301l`, `p301m`, `p301n`, `p301o`, `p302a`, `p302b`, `p302c`, `p303a`, `p303b1`, `p303b2`, `p303b3`, `p303c`) VALUES
+('111006100102', 3, 9, 4, 10, 4, 8, 9, 9, 4, 9, 10, 5, 5, 5, 4, 'Tidak', 'Tidak', 'Tidak', 'Ya', '', '', '', '0'),
+('111006100110', 7, 7, 8, 8, 8, 8, 8, 9, 10, 10, 10, 10, 10, 10, 10, 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -446,7 +616,8 @@ CREATE TABLE `tbl_jwb_ed_d` (
 --
 
 INSERT INTO `tbl_jwb_ed_d` (`nomor_kuesioner`, `p401`, `p402`, `p403a1`, `p403a2`, `p403a3`, `p403b`, `p403c`, `p403d`, `p403e`, `p403f`, `p403g`, `p403h`, `p403i`, `p403j`, `p403k`, `p403l`, `p403m`, `p404a`, `p404b`, `p404c`, `p404d`, `p404e`, `p405a`, `p405b`, `p405c`, `p405d`, `p405e`, `p405f`, `p405g`, `p405h`, `p405i`, `p405j`, `p405k`, `p405l`, `p405m`, `p405n`, `p405o`, `p405p`, `p405q`, `p405r`, `p405s`, `p405t`, `p405u`, `p405v`, `p405w`, `p405x`, `p405y`, `p406a`, `p406b`, `p406c`, `p406d`, `p406e`, `p406f`, `p406g`, `p406h`, `p406i`, `p406j`, `p406k`, `p406l`, `p406m`) VALUES
-('111006100102', 7, 7, 8, 4, 4, 4, 8, 3, 3, 4, 4, 9, 4, 4, 4, 9, 3, 4, 9, 4, 4, 'asdfsadf', 4, 9, 3, 4, 4, 4, 3, 4, 4, 3, 9, 4, 4, 8, 9, 4, 8, 4, 8, 4, 4, 4, 9, 9, 4, 4, 4, 9, 10, 5, 10, 10, 10, 4, 4, 10, 5, 4);
+('111006100102', 7, 7, 8, 4, 4, 4, 8, 3, 3, 4, 4, 9, 4, 4, 4, 9, 3, 4, 9, 4, 4, 'asdfsadf', 4, 9, 3, 4, 4, 4, 3, 4, 4, 3, 9, 4, 4, 8, 9, 4, 8, 4, 8, 4, 4, 4, 9, 9, 4, 4, 4, 9, 10, 5, 10, 10, 10, 4, 4, 10, 5, 4),
+('111006100110', 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 8, 9, 8, 9, 8, 9, 8, 9, 8, 9, 9, 'asdfasdf', 10, 9, 9, 9, 10, 10, 10, 9, 9, 9, 9, 9, 10, 10, 10, 10, 9, 10, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 9, 10, 9, 10, 9, 10, 9, 10);
 
 -- --------------------------------------------------------
 
@@ -479,7 +650,8 @@ CREATE TABLE `tbl_jwb_ed_e` (
 --
 
 INSERT INTO `tbl_jwb_ed_e` (`nomor_kuesioner`, `p501a`, `p501b1`, `p501b2`, `p501b3`, `p501b4`, `p501b5`, `p501b6`, `p501b7`, `p501b8`, `p502a`, `p502b1`, `p502b2`, `p502b3`, `p502b4`, `p502b5`, `p502b6`) VALUES
-('111006100102', 'Tidak', '', '', '', '', '', '', '', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'asdfasdfsaf');
+('111006100102', 'Tidak', '', '', '', '', '', '', '', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'asdfasdfsaf'),
+('111006100110', 'Tidak', '', '', '', '', '', '', '', '', 'Tidak', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -505,15 +677,16 @@ CREATE TABLE `tbl_jwb_ed_f` (
   `p603b1` varchar(5) NOT NULL,
   `p603b2` varchar(5) NOT NULL,
   `p603b3` text NOT NULL,
-  `parameter` int(1) NOT NULL
+  `p603c` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_ed_f`
 --
 
-INSERT INTO `tbl_jwb_ed_f` (`nomor_kuesioner`, `p601a`, `p601b`, `p601c`, `p601d`, `p601e`, `p601f`, `p601g`, `p601h`, `p602a`, `p602b`, `p602c`, `p602d`, `p603a`, `p603b1`, `p603b2`, `p603b3`, `parameter`) VALUES
-('111006100102', 9, 4, 10, 9, 4, 10, 4, 9, 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', 0);
+INSERT INTO `tbl_jwb_ed_f` (`nomor_kuesioner`, `p601a`, `p601b`, `p601c`, `p601d`, `p601e`, `p601f`, `p601g`, `p601h`, `p602a`, `p602b`, `p602c`, `p602d`, `p603a`, `p603b1`, `p603b2`, `p603b3`, `p603c`) VALUES
+('111006100102', 9, 4, 10, 9, 4, 10, 4, 9, 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', '0'),
+('111006100110', 8, 10, 10, 9, 10, 9, 10, 5, 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Ya', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -566,7 +739,8 @@ CREATE TABLE `tbl_jwb_ed_g` (
 --
 
 INSERT INTO `tbl_jwb_ed_g` (`nomor_kuesioner`, `p701`, `p702`, `p703a1`, `p703a2`, `p703a3`, `p703b`, `p703c`, `p703d`, `p703e`, `p703f`, `p703g`, `p703h`, `p703i`, `p703j`, `p703k`, `p703l`, `p703m`, `p704a`, `p704b`, `p704c`, `p704d`, `p704e`, `p705a`, `p705b`, `p705c`, `p705d`, `p705e`, `p706a`, `p706b`, `p706c`, `p706d`, `p706e`, `p706f`, `p706g`, `p706h`, `p706i`) VALUES
-('111006100102', 9, 4, 4, 3, 4, 4, 9, 10, 5, 4, 10, 4, 10, 4, 10, 10, 10, 5, 10, 10, 9, 'asdfsadf', 10, 5, 5, 10, 5, 8, 8, 8, 8, 9, 9, 9, 9, 4);
+('111006100102', 9, 4, 4, 3, 4, 4, 9, 10, 5, 4, 10, 4, 10, 4, 10, 10, 10, 5, 10, 10, 9, 'asdfsadf', 10, 5, 5, 10, 5, 8, 8, 8, 8, 9, 9, 9, 9, 4),
+('111006100110', 10, 10, 10, 8, 10, 9, 10, 9, 10, 4, 9, 10, 9, 10, 4, 9, 10, 4, 3, 9, 10, 'asdf', 10, 10, 10, 8, 9, 10, 9, 10, 10, 10, 9, 10, 10, 10);
 
 -- --------------------------------------------------------
 
@@ -593,7 +767,8 @@ CREATE TABLE `tbl_jwb_ed_h` (
 --
 
 INSERT INTO `tbl_jwb_ed_h` (`nomor_kuesioner`, `p801a`, `p801b`, `p801c`, `p801d`, `p802a`, `p802b`, `p802c`, `p802d`, `p802e`, `p802f`) VALUES
-('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', '', '', '', '', '', '');
+('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', '', '', '', '', '', ''),
+('111006100110', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -662,7 +837,8 @@ CREATE TABLE `tbl_jwb_ed_i` (
 --
 
 INSERT INTO `tbl_jwb_ed_i` (`nomor_kuesioner`, `p901a`, `p901b`, `p902a`, `p902b`, `p903a`, `p903b`, `p904a`, `p904b`, `p905a`, `p905b`, `p906a`, `p906b`, `p907a`, `p907b`, `p908a`, `p908b`, `p909a`, `p909b`, `p909c`, `p909d`, `p910a`, `p910b`, `p910c`, `p910d`, `p911a`, `p911b`, `p911c`, `p911d`, `p912a`, `p912b`, `p912c`, `p912d`, `p913c`, `p913d`, `p914c`, `p914d`, `p915c`, `p915d`, `p916c`, `p916d`, `p917c`, `p917d`, `p918c`, `p918d`, `p919c`, `p919d`, `p920c`, `p920d`, `p921c`, `p921d`, `p922c`, `p922d`) VALUES
-('111006100102', '10', '1', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '5', '', '5', '', '5', '');
+('111006100102', '10', '1', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '5', '', '5', '', '5', ''),
+('111006100110', '4', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '4', '', '4', '', '4', '', '4', '', '5', '', '4', '', '5', '', '9', '6', '5', '', '10', '6', '5', '', '4', '', '4', '', '5', '', '4', '', '5', '');
 
 -- --------------------------------------------------------
 
@@ -719,7 +895,8 @@ CREATE TABLE `tbl_jwb_ed_j` (
 --
 
 INSERT INTO `tbl_jwb_ed_j` (`nomor_kuesioner`, `p1001`, `p1002`, `p1003a`, `p1003b1`, `p1003b2`, `p1003b3`, `p1003b4`, `p1003b5`, `p1003b6`, `p1003b7`, `p1003b8`, `p1003b9`, `p1003b10`, `p1003b11`, `p1003b12`, `p1003b13`, `p1004a`, `p1004b`, `p1004c`, `p1004d`, `p1004e`, `p1005a`, `p1005b`, `p1005c`, `p1005d`, `p1005e`, `p1006a`, `p1006b1`, `p1006b2`, `p1006b3`, `p1006b4`, `p1006b5`, `p1006b6`, `p1006b7`, `p1006b8`, `p1006b9`, `p1006b10`, `p1006b11`, `p1006b12`, `p1007`) VALUES
-('111006100102', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+('111006100102', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('111006100110', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -747,7 +924,8 @@ CREATE TABLE `tbl_jwb_ed_k` (
 --
 
 INSERT INTO `tbl_jwb_ed_k` (`nomor_kuesioner`, `p1101a`, `p1101b`, `p1101c`, `p1102a`, `p1102b`, `p1102c`, `p1102d`, `p1102e`, `p1102f`, `p1103`, `p1104`) VALUES
-('111006100102', 'Ya', 'Ya', 'asdfdsaf', 10, 10, 10, 10, 10, 10, 'asdfsadfasdfasdf', 10);
+('111006100102', 'Ya', 'Ya', 'asdfdsaf', 10, 10, 10, 10, 10, 10, 'asdfsadfasdfasdf', 10),
+('111006100110', 'Tidak', 'Tidak', '', 8, 8, 9, 10, 9, 10, 'asdfasdf', 7);
 
 -- --------------------------------------------------------
 
@@ -768,7 +946,8 @@ CREATE TABLE `tbl_jwb_ed_l` (
 --
 
 INSERT INTO `tbl_jwb_ed_l` (`nomor_kuesioner`, `p1201`, `p1202a`, `p1202b`, `p1203`) VALUES
-('111006100102', 'Ya', 'Tidak', '', 2);
+('111006100102', 'Ya', 'Tidak', '', 2),
+('111006100110', 'Ya', 'Tidak', '', 6);
 
 -- --------------------------------------------------------
 
@@ -804,7 +983,8 @@ CREATE TABLE `tbl_jwb_ed_m` (
 --
 
 INSERT INTO `tbl_jwb_ed_m` (`nomor_kuesioner`, `p1301a`, `p1301b`, `p1301c`, `p1301d`, `p1301e`, `p1301f`, `p1301g`, `p1301h`, `p1301i`, `p1302`, `p1303a`, `p1303b`, `p1303c`, `p1303d`, `p1303e`, `p1303f`, `p1303g`, `p1303h`, `p1304`) VALUES
-('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Penyampaian secara langsung (pidato, khutbah, nasehat, dsb)');
+('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Penyampaian secara langsung (pidato, khutbah, nasehat, dsb)'),
+('111006100110', 'Pernah', 'Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Penyampaian secara tidak langsung melalui kesenian, dsb');
 
 -- --------------------------------------------------------
 
@@ -826,7 +1006,8 @@ CREATE TABLE `tbl_jwb_ed_n` (
 --
 
 INSERT INTO `tbl_jwb_ed_n` (`nomor_kuesioner`, `pencegahan`, `pemberantasan`, `tgl_wawancara`, `mulai`, `selesai`) VALUES
-('111006100102', 'adsfasdf', 'asdfasdf', '2018-04-30', '22:50:00', '22:50:00');
+('111006100102', 'adsfasdf', 'asdfasdf', '2018-04-30', '22:50:00', '22:50:00'),
+('111006100110', 'asdjflajsdfkljsaldkjfklsjlkf', 'alskdkjflaskdjflsakjfklasdjfkl', '2018-04-30', '19:41:00', '19:41:00');
 
 -- --------------------------------------------------------
 
@@ -855,7 +1036,9 @@ CREATE TABLE `tbl_jwb_en_a` (
 INSERT INTO `tbl_jwb_en_a` (`nomor_kuesioner`, `p101`, `p102`, `p103`, `p1041`, `p1042`, `p105`, `p106`, `p107`, `p108`, `p109`) VALUES
 ('111006100101', 'Junius Fernando Pasaribu', 'Medan', 'Tidak Pernah', 3, 2, 'Anak', 'Laki-laki', '24-30 tahun', 'DIV/S1', 'Belum Kawin'),
 ('111006100102', 'kians', 'ajajajajjaj', 'Pernah', 2, 2, 'Famili Lain (Menantu, Cucu, Or', 'Laki-laki', '41-60 tahun', 'S3', 'Kawin'),
-('111006100103', 'adsfasdf', 'asdfsadfasdf', 'Pernah', 2, 2, 'Kepala Rumahtangga', 'Laki-laki', '17-23 tahun', 'Tidak tamat SD/sederajat', 'Kawin');
+('111006100103', 'adsfasdf', 'asdfsadfasdf', 'Pernah', 2, 2, 'Kepala Rumahtangga', 'Laki-laki', '17-23 tahun', 'Tidak tamat SD/sederajat', 'Kawin'),
+('111006100106', 'Kamal', 'Jl.Pahlawan Gg. Sindang Resmi RT 01/Rw 18 No .12 Kel bondongan', 'Tidak Pernah', 3, 0, 'Kepala Rumahtangga', 'Laki-laki', '31-40 tahun', 'DIV/S1', 'Kawin'),
+('111006100110', 'kians azizatikarna', 'Jl.Pahlawan', 'Pernah', 1, 1, 'Anak', 'Laki-laki', '17-23 tahun', 'DIV/S1', 'Belum Kawin');
 
 -- --------------------------------------------------------
 
@@ -885,34 +1068,24 @@ CREATE TABLE `tbl_jwb_en_b` (
   `p202b72` char(10) NOT NULL,
   `p202b81` char(5) NOT NULL,
   `p202b82` char(10) NOT NULL,
-  `p203a11` char(5) NOT NULL,
-  `p203a12` char(10) NOT NULL,
-  `p203a21` char(5) NOT NULL,
-  `p203a22` char(10) NOT NULL,
-  `p203a31` char(5) NOT NULL,
-  `p203a32` char(10) NOT NULL,
-  `p203a41` char(5) NOT NULL,
-  `p203a42` char(10) NOT NULL,
-  `p203a51` char(5) NOT NULL,
-  `p203a52` char(10) NOT NULL,
-  `p203b11` char(5) NOT NULL,
-  `p203b12` char(10) NOT NULL,
-  `p203b21` char(5) NOT NULL,
-  `p203b22` char(10) NOT NULL,
-  `p203b31` char(5) NOT NULL,
-  `p203b32` char(10) NOT NULL,
-  `p203b41` char(5) NOT NULL,
-  `p203b42` char(10) NOT NULL
+  `p203a1` char(5) NOT NULL,
+  `p203a2` char(5) NOT NULL,
+  `p203a3` char(5) NOT NULL,
+  `p203a4` char(5) NOT NULL,
+  `p203a5` char(5) NOT NULL,
+  `p203b1` char(5) NOT NULL,
+  `p203b2` char(5) NOT NULL,
+  `p203b3` char(5) NOT NULL,
+  `p203b4` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_en_b`
 --
 
-INSERT INTO `tbl_jwb_en_b` (`nomor_kuesioner`, `p201`, `p201x`, `p202a1`, `p202a2`, `p202b11`, `p202b12`, `p202b21`, `p202b22`, `p202b31`, `p202b32`, `p202b41`, `p202b42`, `p202b51`, `p202b52`, `p202b61`, `p202b62`, `p202b71`, `p202b72`, `p202b81`, `p202b82`, `p203a11`, `p203a12`, `p203a21`, `p203a22`, `p203a31`, `p203a32`, `p203a41`, `p203a42`, `p203a51`, `p203a52`, `p203b11`, `p203b12`, `p203b21`, `p203b22`, `p203b31`, `p203b32`, `p203b41`, `p203b42`) VALUES
-('111006100101', 'Pelajar/Mahasiswa', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', ''),
-('111006100102', 'Pejabat Eksekutif, Legislatif, dan Yudikatif', '', 'Ya', '< 1 tahun', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', ''),
-('111006100103', 'Pejabat Eksekutif, Legislatif, dan Yudikatif', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '');
+INSERT INTO `tbl_jwb_en_b` (`nomor_kuesioner`, `p201`, `p201x`, `p202a1`, `p202a2`, `p202b11`, `p202b12`, `p202b21`, `p202b22`, `p202b31`, `p202b32`, `p202b41`, `p202b42`, `p202b51`, `p202b52`, `p202b61`, `p202b62`, `p202b71`, `p202b72`, `p202b81`, `p202b82`, `p203a1`, `p203a2`, `p203a3`, `p203a4`, `p203a5`, `p203b1`, `p203b2`, `p203b3`, `p203b4`) VALUES
+('111006100106', 'Profesi Lainnya', 'asdfasdf', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+('111006100110', 'Profesi Lainnya', 'Pegawai Negri', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -944,17 +1117,15 @@ CREATE TABLE `tbl_jwb_en_c` (
   `p303b1` char(5) NOT NULL,
   `p303b2` char(5) NOT NULL,
   `p303b3` text NOT NULL,
-  `parameter` int(1) NOT NULL
+  `p303c` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_en_c`
 --
 
-INSERT INTO `tbl_jwb_en_c` (`nomor_kuesioner`, `p301a`, `p301b`, `p301c`, `p301d`, `p301e`, `p301f`, `p301g`, `p301h`, `p301i`, `p301j`, `p301k`, `p301l`, `p301m`, `p301n`, `p301o`, `p302a`, `p302b`, `p302c`, `p303a`, `p303b1`, `p303b2`, `p303b3`, `parameter`) VALUES
-('111006100101', 2, 2, 6, 6, 6, 2, 10, 4, 3, 4, 3, 9, 8, 3, 3, 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', 0),
-('111006100102', 1, 7, 2, 2, 2, 8, 3, 2, 2, 2, 8, 8, 3, 3, 3, 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', 0),
-('111006100103', 7, 8, 3, 8, 9, 4, 4, 4, 8, 8, 7, 7, 8, 9, 4, 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'asdfsdaf', 1);
+INSERT INTO `tbl_jwb_en_c` (`nomor_kuesioner`, `p301a`, `p301b`, `p301c`, `p301d`, `p301e`, `p301f`, `p301g`, `p301h`, `p301i`, `p301j`, `p301k`, `p301l`, `p301m`, `p301n`, `p301o`, `p302a`, `p302b`, `p302c`, `p303a`, `p303b1`, `p303b2`, `p303b3`, `p303c`) VALUES
+('111006100110', 8, 8, 8, 8, 9, 9, 8, 9, 8, 9, 8, 8, 9, 8, 4, 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Ya', 'Ya', 'apa ya', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -1032,7 +1203,8 @@ CREATE TABLE `tbl_jwb_en_d` (
 
 INSERT INTO `tbl_jwb_en_d` (`nomor_kuesioner`, `p401`, `p402`, `p403a1`, `p403a2`, `p403a3`, `p403b`, `p403c`, `p403d`, `p403e`, `p403f`, `p403g`, `p403h`, `p403i`, `p403j`, `p403k`, `p403l`, `p403m`, `p404a`, `p404b`, `p404c`, `p404d`, `p404e`, `p405a`, `p405b`, `p405c`, `p405d`, `p405e`, `p405f`, `p405g`, `p405h`, `p405i`, `p405j`, `p405k`, `p405l`, `p405m`, `p405n`, `p405o`, `p405p`, `p405q`, `p405r`, `p405s`, `p405t`, `p405u`, `p405v`, `p405w`, `p405x`, `p405y`, `p406a`, `p406b`, `p406c`, `p406d`, `p406e`, `p406f`, `p406g`, `p406h`, `p406i`, `p406j`, `p406k`, `p406l`, `p406m`) VALUES
 ('111006100101', 8, 8, 8, 3, 9, 4, 9, 3, 4, 4, 9, 9, 9, 8, 8, 8, 9, 4, 4, 9, 3, 'asdf', 9, 4, 9, 4, 9, 4, 9, 8, 8, 9, 9, 9, 9, 8, 8, 9, 4, 9, 9, 8, 8, 9, 8, 8, 8, 9, 8, 9, 8, 3, 9, 3, 3, 9, 3, 9, 9, 8),
-('111006100102', 2, 2, 10, 10, 10, 4, 4, 4, 5, 10, 4, 4, 4, 5, 4, 10, 4, 4, 5, 10, 10, 'jok', 5, 9, 9, 9, 9, 9, 10, 9, 9, 4, 4, 10, 5, 5, 4, 4, 9, 4, 9, 10, 5, 9, 4, 4, 4, 5, 9, 9, 4, 4, 4, 9, 4, 4, 4, 4, 9, 8);
+('111006100102', 2, 2, 10, 10, 10, 4, 4, 4, 5, 10, 4, 4, 4, 5, 4, 10, 4, 4, 5, 10, 10, 'jok', 5, 9, 9, 9, 9, 9, 10, 9, 9, 4, 4, 10, 5, 5, 4, 4, 9, 4, 9, 10, 5, 9, 4, 4, 4, 5, 9, 9, 4, 4, 4, 9, 4, 4, 4, 4, 9, 8),
+('111006100110', 9, 10, 9, 9, 10, 9, 9, 4, 10, 9, 10, 4, 9, 9, 9, 9, 9, 9, 9, 9, 9, 'pa ya', 8, 8, 8, 8, 9, 9, 8, 9, 8, 9, 9, 9, 8, 9, 9, 3, 9, 3, 9, 9, 8, 9, 9, 9, 9, 9, 9, 9, 9, 8, 9, 8, 9, 8, 9, 9, 9, 9);
 
 -- --------------------------------------------------------
 
@@ -1065,7 +1237,7 @@ CREATE TABLE `tbl_jwb_en_e` (
 --
 
 INSERT INTO `tbl_jwb_en_e` (`nomor_kuesioner`, `p501a`, `p501b1`, `p501b2`, `p501b3`, `p501b4`, `p501b5`, `p501b6`, `p501b7`, `p501b8`, `p502a`, `p502b1`, `p502b2`, `p502b3`, `p502b4`, `p502b5`, `p502b6`) VALUES
-('111006100102', 'Ya', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Tidak', '', '', '', '', '', '');
+('111006100110', 'Ya', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'yaya');
 
 -- --------------------------------------------------------
 
@@ -1091,15 +1263,15 @@ CREATE TABLE `tbl_jwb_en_f` (
   `p603b1` varchar(5) NOT NULL,
   `p603b2` varchar(5) NOT NULL,
   `p603b3` text NOT NULL,
-  `parameter` int(1) NOT NULL
+  `p603c` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_en_f`
 --
 
-INSERT INTO `tbl_jwb_en_f` (`nomor_kuesioner`, `p601a`, `p601b`, `p601c`, `p601d`, `p601e`, `p601f`, `p601g`, `p601h`, `p602a`, `p602b`, `p602c`, `p602d`, `p603a`, `p603b1`, `p603b2`, `p603b3`, `parameter`) VALUES
-('111006100102', 2, 2, 3, 3, 7, 7, 2, 2, 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'aaa', 1);
+INSERT INTO `tbl_jwb_en_f` (`nomor_kuesioner`, `p601a`, `p601b`, `p601c`, `p601d`, `p601e`, `p601f`, `p601g`, `p601h`, `p602a`, `p602b`, `p602c`, `p602d`, `p603a`, `p603b1`, `p603b2`, `p603b3`, `p603c`) VALUES
+('111006100110', 8, 8, 8, 9, 8, 8, 9, 4, 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'aaaaaa', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -1152,7 +1324,8 @@ CREATE TABLE `tbl_jwb_en_g` (
 --
 
 INSERT INTO `tbl_jwb_en_g` (`nomor_kuesioner`, `p701`, `p702`, `p703a1`, `p703a2`, `p703a3`, `p703b`, `p703c`, `p703d`, `p703e`, `p703f`, `p703g`, `p703h`, `p703i`, `p703j`, `p703k`, `p703l`, `p703m`, `p704a`, `p704b`, `p704c`, `p704d`, `p704e`, `p705a`, `p705b`, `p705c`, `p705d`, `p705e`, `p706a`, `p706b`, `p706c`, `p706d`, `p706e`, `p706f`, `p706g`, `p706h`, `p706i`) VALUES
-('111006100102', 7, 2, 7, 7, 7, 8, 8, 8, 4, 7, 3, 4, 8, 7, 8, 8, 2, 3, 8, 9, 9, 'asdfsdaf', 2, 3, 8, 8, 9, 3, 3, 8, 9, 9, 3, 3, 2, 7);
+('111006100102', 7, 2, 7, 7, 7, 8, 8, 8, 4, 7, 3, 4, 8, 7, 8, 8, 2, 3, 8, 9, 9, 'asdfsdaf', 2, 3, 8, 8, 9, 3, 3, 8, 9, 9, 3, 3, 2, 7),
+('111006100110', 7, 2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 'aaa', 9, 9, 9, 9, 9, 4, 9, 9, 9, 9, 9, 9, 9, 9);
 
 -- --------------------------------------------------------
 
@@ -1179,7 +1352,8 @@ CREATE TABLE `tbl_jwb_en_h` (
 --
 
 INSERT INTO `tbl_jwb_en_h` (`nomor_kuesioner`, `p801a`, `p801b`, `p801c`, `p801d`, `p802a`, `p802b`, `p802c`, `p802d`, `p802e`, `p802f`) VALUES
-('111006100102', 'Pernah', 'Pernah', 'Pernah', 'Tidak Pernah', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'asdfsadf');
+('111006100102', 'Pernah', 'Pernah', 'Pernah', 'Tidak Pernah', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'asdfsadf'),
+('111006100110', 'Tidak Pernah', 'Tidak Pernah', 'Pernah', 'Tidak Pernah', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'asdf');
 
 -- --------------------------------------------------------
 
@@ -1248,7 +1422,8 @@ CREATE TABLE `tbl_jwb_en_i` (
 --
 
 INSERT INTO `tbl_jwb_en_i` (`nomor_kuesioner`, `p901a`, `p901b`, `p902a`, `p902b`, `p903a`, `p903b`, `p904a`, `p904b`, `p905a`, `p905b`, `p906a`, `p906b`, `p907a`, `p907b`, `p908a`, `p908b`, `p909a`, `p909b`, `p909c`, `p909d`, `p910a`, `p910b`, `p910c`, `p910d`, `p911a`, `p911b`, `p911c`, `p911d`, `p912a`, `p912b`, `p912c`, `p912d`, `p913c`, `p913d`, `p914c`, `p914d`, `p915c`, `p915d`, `p916c`, `p916d`, `p917c`, `p917d`, `p918c`, `p918d`, `p919c`, `p919d`, `p920c`, `p920d`, `p921c`, `p921d`, `p922c`, `p922d`) VALUES
-('111006100102', '8', '1', '3', '', '3', '', '9', '7', '4', '', '4', '', '9', '7', '3', '', '3', '', '8', '7', '8', '7', '3', '', '3', '', '3', '', '8', '7', '8', '7', '3', '', '3', '', '8', '8', '8', '8', '3', '', '4', '', '4', '', '9', '7', '4', '', '4', '');
+('111006100102', '8', '1', '3', '', '3', '', '9', '7', '4', '', '4', '', '9', '7', '3', '', '3', '', '8', '7', '8', '7', '3', '', '3', '', '3', '', '8', '7', '8', '7', '3', '', '3', '', '8', '8', '8', '8', '3', '', '4', '', '4', '', '9', '7', '4', '', '4', ''),
+('111006100110', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '5', '', '10', '6', '5', '', '10', '6', '10', '8', '10', '6', '10', '6', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '10', '6', '5', '', '5', '', '10', '6', '5', '');
 
 -- --------------------------------------------------------
 
@@ -1305,7 +1480,9 @@ CREATE TABLE `tbl_jwb_en_j` (
 --
 
 INSERT INTO `tbl_jwb_en_j` (`nomor_kuesioner`, `p1001`, `p1002`, `p1003a`, `p1003b1`, `p1003b2`, `p1003b3`, `p1003b4`, `p1003b5`, `p1003b6`, `p1003b7`, `p1003b8`, `p1003b9`, `p1003b10`, `p1003b11`, `p1003b12`, `p1003b13`, `p1004a`, `p1004b`, `p1004c`, `p1004d`, `p1004e`, `p1005a`, `p1005b`, `p1005c`, `p1005d`, `p1005e`, `p1006a`, `p1006b1`, `p1006b2`, `p1006b3`, `p1006b4`, `p1006b5`, `p1006b6`, `p1006b7`, `p1006b8`, `p1006b9`, `p1006b10`, `p1006b11`, `p1006b12`, `p1007`) VALUES
-('111006100102', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+('111006100102', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('111006100104', 'Ya', 'Akses/Kedekatan', 'Tidak', 'Pernah', 'Pernah', 'TIdak Pernah', 'TIdak Pernah', 'TIdak Pernah', 'TIdak Pernah', 'TIdak Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 9, 9, 4, 4, 'kk', 10, 10, 10, 10, 10, 'Tidak', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7),
+('111006100110', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1333,7 +1510,8 @@ CREATE TABLE `tbl_jwb_en_k` (
 --
 
 INSERT INTO `tbl_jwb_en_k` (`nomor_kuesioner`, `p1101a`, `p1101b`, `p1101c`, `p1102a`, `p1102b`, `p1102c`, `p1102d`, `p1102e`, `p1102f`, `p1103`, `p1104`) VALUES
-('111006100102', 'Tidak', 'Ya', 'koko', 8, 9, 9, 10, 4, 9, 'kokokokok', 10);
+('111006100102', 'Tidak', 'Ya', 'koko', 8, 9, 9, 10, 4, 9, 'kokokokok', 10),
+('111006100110', 'Ya', 'Ya', 'asdfasdfasdfasdf', 7, 7, 7, 8, 8, 8, 'fefefefef', 2);
 
 -- --------------------------------------------------------
 
@@ -1354,7 +1532,8 @@ CREATE TABLE `tbl_jwb_en_l` (
 --
 
 INSERT INTO `tbl_jwb_en_l` (`nomor_kuesioner`, `p1201`, `p1202a`, `p1202b`, `p1203`) VALUES
-('111006100102', 'Ya', 'Tidak', '', 2);
+('111006100102', 'Ya', 'Tidak', '', 2),
+('111006100110', 'Ya', 'Tidak', '', 2);
 
 -- --------------------------------------------------------
 
@@ -1390,7 +1569,8 @@ CREATE TABLE `tbl_jwb_en_m` (
 --
 
 INSERT INTO `tbl_jwb_en_m` (`nomor_kuesioner`, `p1301a`, `p1301b`, `p1301c`, `p1301d`, `p1301e`, `p1301f`, `p1301g`, `p1301h`, `p1301i`, `p1302`, `p1303a`, `p1303b`, `p1303c`, `p1303d`, `p1303e`, `p1303f`, `p1303g`, `p1303h`, `p1304`) VALUES
-('111006100102', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Alat Peraga (pameran, spanduk, pamflet, brosur, stiker, dsb)');
+('111006100102', 'Pernah', 'Pernah', 'Pernah', 'Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Alat Peraga (pameran, spanduk, pamflet, brosur, stiker, dsb)'),
+('111006100110', 'Pernah', 'Tidak Pernah', 'Pernah', 'Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Radio');
 
 -- --------------------------------------------------------
 
@@ -1412,7 +1592,8 @@ CREATE TABLE `tbl_jwb_en_n` (
 --
 
 INSERT INTO `tbl_jwb_en_n` (`nomor_kuesioner`, `pencegahan`, `pemberantasan`, `tgl_wawancara`, `mulai`, `selesai`) VALUES
-('111006100102', 'adsfasdf', 'asdfasdf', '2018-04-30', '22:50:00', '22:50:00');
+('111006100102', 'adsfasdf', 'asdfasdf', '2018-04-30', '22:50:00', '22:50:00'),
+('111006100110', 'asdjflajsdfkljsaldkjfklsjlkf', 'alskdkjflaskdjflsakjfklasdjfkl', '2018-04-30', '19:41:00', '19:41:00');
 
 -- --------------------------------------------------------
 
@@ -1441,7 +1622,9 @@ CREATE TABLE `tbl_jwb_gb_a` (
 INSERT INTO `tbl_jwb_gb_a` (`nomor_kuesioner`, `p101`, `p102`, `p103`, `p1041`, `p1042`, `p105`, `p106`, `p107`, `p108`, `p109`) VALUES
 ('111006100101', 'Junius Fernando Pasaribu', 'Medan', 'Tidak Pernah', 3, 2, 'Anak', 'Laki-laki', '24-30 tahun', 'DIV/S1', 'Belum Kawin'),
 ('111006100102', 'kians', 'ajajajajjaj', 'Pernah', 2, 2, 'Famili Lain (Menantu, Cucu, Or', 'Laki-laki', '41-60 tahun', 'S3', 'Kawin'),
-('111006100103', 'adsfasdf', 'asdfsadfasdf', 'Pernah', 2, 2, 'Kepala Rumahtangga', 'Laki-laki', '17-23 tahun', 'Tidak tamat SD/sederajat', 'Kawin');
+('111006100103', 'adsfasdf', 'asdfsadfasdf', 'Pernah', 2, 2, 'Kepala Rumahtangga', 'Laki-laki', '17-23 tahun', 'Tidak tamat SD/sederajat', 'Kawin'),
+('111006100106', 'Kamal', 'Jl.Pahlawan Gg. Sindang Resmi RT 01/Rw 18 No .12 Kel bondongan', 'Tidak Pernah', 3, 0, 'Kepala Rumahtangga', 'Laki-laki', '31-40 tahun', 'DIV/S1', 'Kawin'),
+('111006100110', 'kians azizatikarna', 'Jl.Pahlawan', 'Pernah', 1, 1, 'Anak', 'Laki-laki', '17-23 tahun', 'DIV/S1', 'Belum Kawin');
 
 -- --------------------------------------------------------
 
@@ -1471,25 +1654,24 @@ CREATE TABLE `tbl_jwb_gb_b` (
   `p202b72` char(10) NOT NULL,
   `p202b81` char(5) NOT NULL,
   `p202b82` char(10) NOT NULL,
-  `p203a11` char(5) NOT NULL,
-  `p203a12` char(10) NOT NULL,
-  `p203a21` char(5) NOT NULL,
-  `p203a22` char(10) NOT NULL,
-  `p203a31` char(5) NOT NULL,
-  `p203a32` char(10) NOT NULL,
-  `p203a41` char(5) NOT NULL,
-  `p203a42` char(10) NOT NULL,
-  `p203a51` char(5) NOT NULL,
-  `p203a52` char(10) NOT NULL,
-  `p203b11` char(5) NOT NULL,
-  `p203b12` char(10) NOT NULL,
-  `p203b21` char(5) NOT NULL,
-  `p203b22` char(10) NOT NULL,
-  `p203b31` char(5) NOT NULL,
-  `p203b32` char(10) NOT NULL,
-  `p203b41` char(5) NOT NULL,
-  `p203b42` char(10) NOT NULL
+  `p203a1` char(5) NOT NULL,
+  `p203a2` char(5) NOT NULL,
+  `p203a3` char(5) NOT NULL,
+  `p203a4` char(5) NOT NULL,
+  `p203a5` char(5) NOT NULL,
+  `p203b1` char(5) NOT NULL,
+  `p203b2` char(5) NOT NULL,
+  `p203b3` char(5) NOT NULL,
+  `p203b4` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_jwb_gb_b`
+--
+
+INSERT INTO `tbl_jwb_gb_b` (`nomor_kuesioner`, `p201`, `p201x`, `p202a1`, `p202a2`, `p202b11`, `p202b12`, `p202b21`, `p202b22`, `p202b31`, `p202b32`, `p202b41`, `p202b42`, `p202b51`, `p202b52`, `p202b61`, `p202b62`, `p202b71`, `p202b72`, `p202b81`, `p202b82`, `p203a1`, `p203a2`, `p203a3`, `p203a4`, `p203a5`, `p203b1`, `p203b2`, `p203b3`, `p203b4`) VALUES
+('111006100106', 'Profesi Lainnya', 'asdfasdf', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+('111006100110', 'Profesi Lainnya', 'Pegawai Negri', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Tidak', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -1521,17 +1703,18 @@ CREATE TABLE `tbl_jwb_gb_c` (
   `p303b1` char(5) NOT NULL,
   `p303b2` char(5) NOT NULL,
   `p303b3` text NOT NULL,
-  `parameter` int(1) NOT NULL
+  `p303c` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_gb_c`
 --
 
-INSERT INTO `tbl_jwb_gb_c` (`nomor_kuesioner`, `p301a`, `p301b`, `p301c`, `p301d`, `p301e`, `p301f`, `p301g`, `p301h`, `p301i`, `p301j`, `p301k`, `p301l`, `p301m`, `p301n`, `p301o`, `p302a`, `p302b`, `p302c`, `p303a`, `p303b1`, `p303b2`, `p303b3`, `parameter`) VALUES
-('111006100101', 2, 2, 6, 6, 6, 2, 10, 4, 3, 4, 3, 9, 8, 3, 3, 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', 0),
-('111006100102', 3, 9, 4, 10, 4, 8, 9, 9, 4, 9, 10, 5, 5, 5, 4, 'Tidak', 'Tidak', 'Tidak', 'Ya', '', '', '', 0),
-('111006100103', 7, 8, 3, 8, 9, 4, 4, 4, 8, 8, 7, 7, 8, 9, 4, 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'asdfsdaf', 1);
+INSERT INTO `tbl_jwb_gb_c` (`nomor_kuesioner`, `p301a`, `p301b`, `p301c`, `p301d`, `p301e`, `p301f`, `p301g`, `p301h`, `p301i`, `p301j`, `p301k`, `p301l`, `p301m`, `p301n`, `p301o`, `p302a`, `p302b`, `p302c`, `p303a`, `p303b1`, `p303b2`, `p303b3`, `p303c`) VALUES
+('111006100101', 2, 2, 6, 6, 6, 2, 10, 4, 3, 4, 3, 9, 8, 3, 3, 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', '0'),
+('111006100102', 3, 9, 4, 10, 4, 8, 9, 9, 4, 9, 10, 5, 5, 5, 4, 'Tidak', 'Tidak', 'Tidak', 'Ya', '', '', '', '0'),
+('111006100103', 7, 8, 3, 8, 9, 4, 4, 4, 8, 8, 7, 7, 8, 9, 4, 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'asdfsdaf', '1'),
+('111006100110', 7, 7, 8, 8, 8, 8, 8, 9, 10, 10, 10, 10, 10, 10, 10, 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1608,7 +1791,8 @@ CREATE TABLE `tbl_jwb_gb_d` (
 --
 
 INSERT INTO `tbl_jwb_gb_d` (`nomor_kuesioner`, `p401`, `p402`, `p403a1`, `p403a2`, `p403a3`, `p403b`, `p403c`, `p403d`, `p403e`, `p403f`, `p403g`, `p403h`, `p403i`, `p403j`, `p403k`, `p403l`, `p403m`, `p404a`, `p404b`, `p404c`, `p404d`, `p404e`, `p405a`, `p405b`, `p405c`, `p405d`, `p405e`, `p405f`, `p405g`, `p405h`, `p405i`, `p405j`, `p405k`, `p405l`, `p405m`, `p405n`, `p405o`, `p405p`, `p405q`, `p405r`, `p405s`, `p405t`, `p405u`, `p405v`, `p405w`, `p405x`, `p405y`, `p406a`, `p406b`, `p406c`, `p406d`, `p406e`, `p406f`, `p406g`, `p406h`, `p406i`, `p406j`, `p406k`, `p406l`, `p406m`) VALUES
-('111006100102', 7, 7, 8, 4, 4, 4, 8, 3, 3, 4, 4, 9, 4, 4, 4, 9, 3, 4, 9, 4, 4, 'asdfsadf', 4, 9, 3, 4, 4, 4, 3, 4, 4, 3, 9, 4, 4, 8, 9, 4, 8, 4, 8, 4, 4, 4, 9, 9, 4, 4, 4, 9, 10, 5, 10, 10, 10, 4, 4, 10, 5, 4);
+('111006100102', 7, 7, 8, 4, 4, 4, 8, 3, 3, 4, 4, 9, 4, 4, 4, 9, 3, 4, 9, 4, 4, 'asdfsadf', 4, 9, 3, 4, 4, 4, 3, 4, 4, 3, 9, 4, 4, 8, 9, 4, 8, 4, 8, 4, 4, 4, 9, 9, 4, 4, 4, 9, 10, 5, 10, 10, 10, 4, 4, 10, 5, 4),
+('111006100110', 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 8, 9, 8, 9, 8, 9, 8, 9, 8, 9, 9, 'asdfasdf', 10, 9, 9, 9, 10, 10, 10, 9, 9, 9, 9, 9, 10, 10, 10, 10, 9, 10, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 9, 10, 9, 10, 9, 10, 9, 10);
 
 -- --------------------------------------------------------
 
@@ -1641,7 +1825,8 @@ CREATE TABLE `tbl_jwb_gb_e` (
 --
 
 INSERT INTO `tbl_jwb_gb_e` (`nomor_kuesioner`, `p501a`, `p501b1`, `p501b2`, `p501b3`, `p501b4`, `p501b5`, `p501b6`, `p501b7`, `p501b8`, `p502a`, `p502b1`, `p502b2`, `p502b3`, `p502b4`, `p502b5`, `p502b6`) VALUES
-('111006100102', 'Tidak', '', '', '', '', '', '', '', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'asdfasdfsaf');
+('111006100102', 'Tidak', '', '', '', '', '', '', '', '', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'asdfasdfsaf'),
+('111006100110', 'Tidak', '', '', '', '', '', '', '', '', 'Tidak', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1667,15 +1852,16 @@ CREATE TABLE `tbl_jwb_gb_f` (
   `p603b1` varchar(5) NOT NULL,
   `p603b2` varchar(5) NOT NULL,
   `p603b3` text NOT NULL,
-  `parameter` int(1) NOT NULL
+  `p603c` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_jwb_gb_f`
 --
 
-INSERT INTO `tbl_jwb_gb_f` (`nomor_kuesioner`, `p601a`, `p601b`, `p601c`, `p601d`, `p601e`, `p601f`, `p601g`, `p601h`, `p602a`, `p602b`, `p602c`, `p602d`, `p603a`, `p603b1`, `p603b2`, `p603b3`, `parameter`) VALUES
-('111006100102', 9, 4, 10, 9, 4, 10, 4, 9, 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', 0);
+INSERT INTO `tbl_jwb_gb_f` (`nomor_kuesioner`, `p601a`, `p601b`, `p601c`, `p601d`, `p601e`, `p601f`, `p601g`, `p601h`, `p602a`, `p602b`, `p602c`, `p602d`, `p603a`, `p603b1`, `p603b2`, `p603b3`, `p603c`) VALUES
+('111006100102', 9, 4, 10, 9, 4, 10, 4, 9, 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', '', '', '', '0'),
+('111006100110', 8, 10, 10, 9, 10, 9, 10, 5, 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Ya', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1728,7 +1914,8 @@ CREATE TABLE `tbl_jwb_gb_g` (
 --
 
 INSERT INTO `tbl_jwb_gb_g` (`nomor_kuesioner`, `p701`, `p702`, `p703a1`, `p703a2`, `p703a3`, `p703b`, `p703c`, `p703d`, `p703e`, `p703f`, `p703g`, `p703h`, `p703i`, `p703j`, `p703k`, `p703l`, `p703m`, `p704a`, `p704b`, `p704c`, `p704d`, `p704e`, `p705a`, `p705b`, `p705c`, `p705d`, `p705e`, `p706a`, `p706b`, `p706c`, `p706d`, `p706e`, `p706f`, `p706g`, `p706h`, `p706i`) VALUES
-('111006100102', 9, 4, 4, 3, 4, 4, 9, 10, 5, 4, 10, 4, 10, 4, 10, 10, 10, 5, 10, 10, 9, 'asdfsadf', 10, 5, 5, 10, 5, 8, 8, 8, 8, 9, 9, 9, 9, 4);
+('111006100102', 9, 4, 4, 3, 4, 4, 9, 10, 5, 4, 10, 4, 10, 4, 10, 10, 10, 5, 10, 10, 9, 'asdfsadf', 10, 5, 5, 10, 5, 8, 8, 8, 8, 9, 9, 9, 9, 4),
+('111006100110', 10, 10, 10, 8, 10, 9, 10, 9, 10, 4, 9, 10, 9, 10, 4, 9, 10, 4, 3, 9, 10, 'asdf', 10, 10, 10, 8, 9, 10, 9, 10, 10, 10, 9, 10, 10, 10);
 
 -- --------------------------------------------------------
 
@@ -1755,7 +1942,8 @@ CREATE TABLE `tbl_jwb_gb_h` (
 --
 
 INSERT INTO `tbl_jwb_gb_h` (`nomor_kuesioner`, `p801a`, `p801b`, `p801c`, `p801d`, `p802a`, `p802b`, `p802c`, `p802d`, `p802e`, `p802f`) VALUES
-('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', '', '', '', '', '', '');
+('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', '', '', '', '', '', ''),
+('111006100110', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1824,7 +2012,8 @@ CREATE TABLE `tbl_jwb_gb_i` (
 --
 
 INSERT INTO `tbl_jwb_gb_i` (`nomor_kuesioner`, `p901a`, `p901b`, `p902a`, `p902b`, `p903a`, `p903b`, `p904a`, `p904b`, `p905a`, `p905b`, `p906a`, `p906b`, `p907a`, `p907b`, `p908a`, `p908b`, `p909a`, `p909b`, `p909c`, `p909d`, `p910a`, `p910b`, `p910c`, `p910d`, `p911a`, `p911b`, `p911c`, `p911d`, `p912a`, `p912b`, `p912c`, `p912d`, `p913c`, `p913d`, `p914c`, `p914d`, `p915c`, `p915d`, `p916c`, `p916d`, `p917c`, `p917d`, `p918c`, `p918d`, `p919c`, `p919d`, `p920c`, `p920d`, `p921c`, `p921d`, `p922c`, `p922d`) VALUES
-('111006100102', '10', '1', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '5', '', '5', '', '5', '');
+('111006100102', '10', '1', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '10', '6', '5', '', '5', '', '5', ''),
+('111006100110', '4', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '5', '', '4', '', '4', '', '4', '', '4', '', '5', '', '4', '', '5', '', '9', '6', '5', '', '10', '6', '5', '', '4', '', '4', '', '5', '', '4', '', '5', '');
 
 -- --------------------------------------------------------
 
@@ -1881,7 +2070,8 @@ CREATE TABLE `tbl_jwb_gb_j` (
 --
 
 INSERT INTO `tbl_jwb_gb_j` (`nomor_kuesioner`, `p1001`, `p1002`, `p1003a`, `p1003b1`, `p1003b2`, `p1003b3`, `p1003b4`, `p1003b5`, `p1003b6`, `p1003b7`, `p1003b8`, `p1003b9`, `p1003b10`, `p1003b11`, `p1003b12`, `p1003b13`, `p1004a`, `p1004b`, `p1004c`, `p1004d`, `p1004e`, `p1005a`, `p1005b`, `p1005c`, `p1005d`, `p1005e`, `p1006a`, `p1006b1`, `p1006b2`, `p1006b3`, `p1006b4`, `p1006b5`, `p1006b6`, `p1006b7`, `p1006b8`, `p1006b9`, `p1006b10`, `p1006b11`, `p1006b12`, `p1007`) VALUES
-('111006100102', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+('111006100102', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('111006100110', 'Tidak', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '', 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1909,7 +2099,8 @@ CREATE TABLE `tbl_jwb_gb_k` (
 --
 
 INSERT INTO `tbl_jwb_gb_k` (`nomor_kuesioner`, `p1101a`, `p1101b`, `p1101c`, `p1102a`, `p1102b`, `p1102c`, `p1102d`, `p1102e`, `p1102f`, `p1103`, `p1104`) VALUES
-('111006100102', 'Ya', 'Ya', 'asdfdsaf', 10, 10, 10, 10, 10, 10, 'asdfsadfasdfasdf', 10);
+('111006100102', 'Ya', 'Ya', 'asdfdsaf', 10, 10, 10, 10, 10, 10, 'asdfsadfasdfasdf', 10),
+('111006100110', 'Tidak', 'Tidak', '', 8, 8, 9, 10, 9, 10, 'asdfasdf', 7);
 
 -- --------------------------------------------------------
 
@@ -1930,7 +2121,8 @@ CREATE TABLE `tbl_jwb_gb_l` (
 --
 
 INSERT INTO `tbl_jwb_gb_l` (`nomor_kuesioner`, `p1201`, `p1202a`, `p1202b`, `p1203`) VALUES
-('111006100102', 'Ya', 'Tidak', '', 2);
+('111006100102', 'Ya', 'Tidak', '', 2),
+('111006100110', 'Ya', 'Tidak', '', 6);
 
 -- --------------------------------------------------------
 
@@ -1966,7 +2158,8 @@ CREATE TABLE `tbl_jwb_gb_m` (
 --
 
 INSERT INTO `tbl_jwb_gb_m` (`nomor_kuesioner`, `p1301a`, `p1301b`, `p1301c`, `p1301d`, `p1301e`, `p1301f`, `p1301g`, `p1301h`, `p1301i`, `p1302`, `p1303a`, `p1303b`, `p1303c`, `p1303d`, `p1303e`, `p1303f`, `p1303g`, `p1303h`, `p1304`) VALUES
-('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Penyampaian secara langsung (pidato, khutbah, nasehat, dsb)');
+('111006100102', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Sering (>1kali/bulan)', 'Penyampaian secara langsung (pidato, khutbah, nasehat, dsb)'),
+('111006100110', 'Pernah', 'Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Tidak Pernah', 'Organisasi Masyarakat', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Jarang', 'Penyampaian secara tidak langsung melalui kesenian, dsb');
 
 -- --------------------------------------------------------
 
@@ -1988,7 +2181,8 @@ CREATE TABLE `tbl_jwb_gb_n` (
 --
 
 INSERT INTO `tbl_jwb_gb_n` (`nomor_kuesioner`, `pencegahan`, `pemberantasan`, `tgl_wawancara`, `mulai`, `selesai`) VALUES
-('111006100102', 'adsfasdf', 'asdfasdf', '2018-04-30', '22:50:00', '22:50:00');
+('111006100102', 'adsfasdf', 'asdfasdf', '2018-04-30', '22:50:00', '22:50:00'),
+('111006100110', 'asdjflajsdfkljsaldkjfklsjlkf', 'alskdkjflaskdjflsakjfklasdjfkl', '2018-04-30', '19:41:00', '19:41:00');
 
 -- --------------------------------------------------------
 
@@ -3906,7 +4100,7 @@ INSERT INTO `tbl_kuesioner` (`nomor_kuesioner`, `token_enumerator`, `token_data_
 ('111006100107', '4fb1e0c9a13e0dbf88d613fc75b5fa06ed7ca1a5', '1744e588d7298d5ad4a9c486f4966f63c2db2eb9', 1, 1, 1, 1, 1, 11, 2, 1, 1, 'SETIA BUDI', 'ERNIZAR'),
 ('111006100108', 'cf71d0a596f511246fe03ae157b240ec19ae7e57', 'ee6223c6a8aadf4c59e6618407fc1cb4028b4317', 1, 1, 1, 1, 1, 11, 2, 1, 1, 'SETIA BUDI', 'ERNIZAR'),
 ('111006100109', 'dbc3dcc59b0686a9e081db2beda905b720aa0b30', '9cfdc586a211c0004fcbe5146d3ec276b1693066', 1, 1, 1, 1, 1, 11, 2, 1, 1, 'SETIA BUDI', 'ERNIZAR'),
-('111006100110', '0c01f7a28d6d77c39a8752453e4aee3bf5acbc11', '13140c241f981a22c726df408bb5fdd169ab1690', 1, 1, 1, 1, 1, 11, 2, 1, 1, 'SETIA BUDI', 'ERNIZAR'),
+('111006100110', '0c01f7a28d6d77c39a8752453e4aee3bf5acbc11', '13140c241f981a22c726df408bb5fdd169ab1690', 0, 0, 1, 1, 1, 11, 2, 1, 1, 'SETIA BUDI', 'ERNIZAR'),
 ('111006100501', '717f57a36c57c3b3d66635b4ed39997b29c49548', '4c3beac0f2934ce125c560f0a842524e71eecbf2', 1, 1, 1, 1, 1, 11, 2, 1, 2, 'SETIA BUDI', 'ERNIZAR'),
 ('111006100502', 'b0977c0bf98cab1245abb712a24a2e1910ed774f', '05d547c859fa8e3a5f84d0aed4aa52a4108ab5ae', 1, 1, 1, 1, 1, 11, 2, 1, 2, 'SETIA BUDI', 'ERNIZAR'),
 ('111006100503', '5574d2cba0468b48260d9b6e533370fecf4bcaaf', 'a2a64e5828e9e2157d1a6c231218980a5aeecb32', 1, 1, 1, 1, 1, 11, 2, 1, 2, 'SETIA BUDI', 'ERNIZAR'),
@@ -26718,7 +26912,7 @@ ALTER TABLE `tbl_user_kelurahan_observasi`
 -- AUTO_INCREMENT for table `tbl_jwb_beda`
 --
 ALTER TABLE `tbl_jwb_beda`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=344;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=519;
 
 --
 -- AUTO_INCREMENT for table `tbl_kab`
